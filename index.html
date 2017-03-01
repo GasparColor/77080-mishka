@@ -9,25 +9,26 @@
 <!-- header -->
 
 		<header class="page-header">
+			<div class="container">
 			<div class="page-logo">
 				<a>
 					<img src="#" alt="mishka-logotype">
 				</a>
 			</div>
 
-			<nav class="page-menu">
-				<ul class="page-menu__list">
-					<li class="page-menu__item"><a href="#">Каталог товаров</a></li>
-					<li class="page-menu__item"><a href="#">Вязание на заказ</a></li>
-					<li class="page-menu__item"><a href="#">Поиск по сайту</a></li>
-					<li class="page-menu__item"><a href="#">Корзина&#58; пока пуста</a></li>
+			<nav class="header-menu">
+				<ul class="header-menu__list page-menu__list-hidden">
+					<li class="header-menu__item"><a href="#">Каталог товаров</a></li>
+					<li class="header-menu__item"><a href="#">Вязание на заказ</a></li>
+					<li class="header-menu__item"><a href="#">Поиск по сайту</a></li>
+					<li class="header-menu__item"><a href="#">Корзина&#58; пока пуста</a></li>
 				</ul>
 			</nav>
 
 			<h1 class="page-header__title">
 				Милые штуки ручной работы для дома
 			</h1>
-
+			</div>
 			<a class="page-header__section" href="#">Предметы интерьера</a>
 			<a class="page-header__section" href="#">Детские игрушки</a>
 		</header>
@@ -37,9 +38,9 @@
 		<section class="featured">
 			<h1 class="visually-hidden">Карточки товаров</h1>
 			<article class="featured-item">
-				<h2 class="featured-item__title">
+				<h1 class="featured-item__title">
 					Вязаные корзинки
-				</h2>
+				</h1>
 				<span class="featured-item__title-descr">
 					Товар недели
 				</span>
@@ -72,57 +73,18 @@
 <!-- about-us -->
 
 		<section class="about-us">
-			<h1 class="about-us__title">
+			<h2 class="about-us__title">
 				Коротко о нас&#187;
-			</h1>
+			</h2>
 
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Экологически чистые материалы
-					</h2>
-				</div>
-
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Скандинавский стиль по российской цене
-					</h2>
-				</div>
-
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Увеличивает лайки на фотографиях
-					</h2>
-				</div>
-
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Связано вручную с любовью и умилением
-					</h2>
-				</div>
-
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Поддержка отечественного производителя
-					</h2>
-				</div>
-
-				<div class="about-us-item">
-					<img class="about-us-item__img" src="#" alt="">
-					<h2 class="about-us-item__item-title">
-						Поставляется в подарочной упаковке
-					</h2>
-				</div>
-
-				<div class="reviews">
-					<h3 class="reviews__title">
-						Отзывы
-					</h3>
-				</div>
+				<ul class="about-us__list">
+					<li class="about-us__item">Экологически чистые материалы</li>
+					<li class="about-us__item">Скандинавский стиль по российской цене</li>
+					<li class="about-us__item">Увеличивает лайки на фотография</li>
+					<li class="about-us__item">Связано вручную с любовью и умилением</li>
+					<li class="about-us__item">Поддержка отечественного производителя</li>
+					<li class="about-us__item">Поставляется в подарочной упаковке</li>
+				</ul>
 
 					<article class="reviews-item">
 						<p class="reviews-item__text">
@@ -136,22 +98,24 @@
 						<a href="#" class="reviews-item__user-profile">
 							@misssssiskras
 						</a>
+						<div class="arrows-wrapper">
 						<a href="#" class="reviews-item__btn reviews-item__btn--prev"></a>
 						<a href="#" class="reviews-item__btn reviews-item__btn--next"></a>
-						<button class="reviews-item__submit-btn page-btn">Отправить</button>
+						</div>
+						<a href="#" class="reviews-item__submit-btn page-btn">Отправить</a>
 					</article>
 		</section>
 
 <!-- contacts -->
 
 		<section class="contacts">
-			<h1 class="contacts__title">
+			<h2 class="contacts__title">
 				Контакты
-			</h1>
+			</h2>
 
 			<div class="contacts__email">
 				<span>e-mail&#58;</span>
-				<span>info@mimimishkashop.ru</span>
+				<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
 			</div>
 			<div class="contacts__adress">
 				<span>адрес&#58;</span>
@@ -162,7 +126,7 @@
 				</span>
 			</div>
 			<img class="contacts__map" src="#" alt="map">
-			<button class="contacts__btn page-btn">Напишите нам</button>
+			<a href="#" class="contacts__btn page-btn">Напишите нам</a>
 		</section>
 
 <!-- footer -->
