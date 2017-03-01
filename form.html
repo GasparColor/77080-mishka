@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+<!-- header -->
+
+		<header class="page-header">
+			<div class="page-logo">
+				<a href="index.html">
+					<img src="#" alt="mishka-logotype">
+				</a>
+			</div>
+
+			<nav class="page-menu">
+				<ul class="page-menu__list">
+					<li class="page-menu__item"><a href="#">Каталог товаров</a></li>
+					<li class="page-menu__item"><a href="#">Вязание на заказ</a></li>
+					<li class="page-menu__item"><a href="#">Поиск по сайту</a></li>
+					<li class="page-menu__item"><a href="#">Корзина&#58; пока пуста</a></li>
+				</ul>
+			</nav>
+
+			<h1 class="page-header__title">
+				Вязание на заказ
+			</h1>
+		</header>
+
+<!-- form -->
+
+		<main>
+			<form class="page-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="page-form__text">
+				Мы будем рады воплотить в жизнь ваши пожелания!
+				Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+			</p>
+			<h2 class="page-form__title">
+				Тип
+			</h2>
+				<input type="radio" id="accessory" name="radio" value="Аксессуар для интерьера" checked>
+				<label for="accessory">Аксессуар для интерьера</label>
+				<input type="radio" id="toy" name="radio" value="Детская игрушка" >
+				<label for="toy">Детская игрушка</label>
+
+			<h2 class="page-form__title">
+				Цвет
+			</h2>
+				<input type="checkbox" id="white" checked>
+				<label for="white">Белый</label>
+				<input type="checkbox" id="gray" checked>
+				<label for="gray">Серый</label>
+				<input type="checkbox" id="tiffany">
+				<label for="tiffany">&#171;Тиффани&#187;</label>
+				<input type="checkbox" id="black">
+				<label for="black">Черный</label>
+				<input type="checkbox" id="pink">
+				<label for="pink">Розовый</label>
+				<input type="checkbox" id="orange">
+				<label for="orange">Оранжевый</label>
+
+			<h2 class="page-form__title">
+				ФИО
+			</h2>
+				<label>Имя<input type="text" placeholder="Введите ваше имя*"></label>
+				<label>Фамилия<input type="text" placeholder="Укажите фамилию*"></label>
+				<label>Отчество<input type="text" placeholder="Отчество, если желаете*"></label>
+
+				<label>Тел<input type="text" placeholder="+7 ХХХ ХХ ХХ*"></label>
+				<label>E-mail<input type="text" placeholder="Ваш Email*"></label>
+				<label>Доп <textarea placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
+				<span class="page-form__descr">*Поля обязательны для заполнения</span>
+				<button class="page-btn">Отправить заказ</button>
+
+			</form>
+		</main>
+
+<!-- footer -->
+
+		<footer class="page-footer">
+		<ul class="page-footer__list">
+			<li class="page-footer__item"><a href="#">instagram</a></li>
+			<li class="page-footer__item"><a href="#">facebook</a></li>
+			<li class="page-footer__item"><a href="#">twitter</a></li>
+		</ul>
+		<div class="copyright">
+			<span>Разработано</span>
+		</div>
+		</footer>
+  </body>
