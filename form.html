@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Мишка</title>
 	</head>
-	<body class="container">
+	<body>
 
 <!-- header -->
 
@@ -48,6 +48,7 @@
 				<input class="order-form__input-type" type="radio" id="toy" name="radio" value="Детская игрушка" >
 				<label for="toy">Детская игрушка</label>
 
+			<div class="form-inner-weapper">
 			<h2 class="order-form__title">
 				Цвет
 			</h2>
@@ -63,7 +64,9 @@
 				<label for="pink">Розовый</label>
 				<input class="order-form__input-color" type="checkbox" id="orange">
 				<label for="orange">Оранжевый</label>
+				</div>
 
+			<div class="form-inner-weapper">
 			<h2 class="order-form__title">
 				ФИО
 			</h2>
@@ -75,7 +78,8 @@
 				<label>E-mail<input type="email" placeholder="Ваш Email*"></label>
 				<label>Доп <textarea placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
 				<span class="order-form__descr"><sup>*</sup>Поля обязательны для заполнения</span>
-				<button class="btn">Отправить заказ</button>
+				<button class="btn" type="submit">Отправить заказ</button>
+
 
 			</form>
 		</main>
