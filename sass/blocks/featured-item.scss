@@ -1,0 +1,13 @@
+.featured-item__title{
+	@include heading-h2;
+}
+
+.featured-item__title-descr{
+	font-family: $font-stack-bold;
+	color: #63d1bb;
+	font-size: 17px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+}
+
