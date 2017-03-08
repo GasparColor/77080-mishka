@@ -1,0 +1,47 @@
+.reviews__title{
+	@include heading-h2;
+	padding-top: 15px;
+	margin-bottom:25px;
+}
+
+.reviews-item__text{
+	font-family: $font-stack;
+	font-size: 15px;
+	line-height: 30px;
+	color: #444444;
+}
+.reviews-item{
+	padding-bottom: 45px;
+}
+.reviews-item__user-name{
+	font-family: $font-stack-bold;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+
+	padding-top: 40px;
+	padding-bottom: 5px;
+  display: inline-block;
+}
+
+.reviews-item__user-profile{
+	font-family: $font-stack-bold;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+}
+
+.reviews-item__submit-btn{
+	display: flex;
+	justify-content: center;
+}
+
+.reviews-item__arrows{
+	margin-top: 30px;
+	margin-bottom: 37px;
+	height:50px;
+	border: 1px solid black;
+
+}

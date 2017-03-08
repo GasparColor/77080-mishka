@@ -1,5 +1,11 @@
+.featured-item{
+	padding-bottom:40px
+}
+
 .featured-item__title{
 	@include heading-h2;
+	padding-top: 10px;
+	margin-bottom: 5px;
 }
 
 .featured-item__title-descr{
@@ -11,3 +17,37 @@
 
 }
 
+.featured-item__text{
+	font-family: $font-stack;
+	font-size: 15px;
+	line-height: 24px;
+	color: #444444;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.featured-item__table{
+	font-family: $font-stack;
+	font-size: 15px;
+	line-height: 20px;
+	color: #444444;
+
+	padding-bottom: 65px;
+}
+
+.featured-item__price{
+	font-family: $font-stack-bold;
+	font-size: 17px;
+	line-height: 24px;
+	color:#444444;
+
+	display: flex;
+  justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 26px;
+}
+
+.featured-item__btn{
+	display: flex;
+  justify-content: center;
+}

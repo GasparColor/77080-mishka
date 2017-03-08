@@ -1,0 +1,35 @@
+.modal b{
+	font-family: $font-stack-bold;
+	font-size: 25px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.modal__descr{
+	font-family: $font-stack;
+	font-size: 15px;
+	line-height: 30px;
+	color: #444444;
+}
+
+.modal label{
+	font-family: $font-stack-bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #444444;
+}
+
+.modal__btn{
+	font-family: $font-stack-bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	background-color: #63d1bb;
+
+	border:none;
+	padding-top:20px;
+	padding-bottom:20px;
+	width:100%;
+	display:block;
+}

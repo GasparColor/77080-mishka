@@ -3,4 +3,12 @@
 	font-size: 25px;
 	line-height: 30px;
 	color:#000;
+	letter-spacing: 1px;
+}
+
+@mixin contacts-font(){
+	font-family: $font-stack;
+	font-size: 15px;
+	line-height: 30px;
+	color:#444444;
 }

@@ -10,6 +10,7 @@
 <!-- header -->
 
 		<header class="header">
+			<div class="container">
 			<div class="logo">
 				<a href="index.html">
 					<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -52,11 +53,12 @@
 			<h1 class="header__title">
 				Вязание на заказ
 			</h1>
+			</div>
 		</header>
 
 <!-- form -->
 
-		<main>
+		<main class="container">
 			<form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="order-form__text">
 				Мы будем рады воплотить в жизнь ваши пожелания!
@@ -98,11 +100,11 @@
 					<label>Фамилия<input class="order-form__input-name" type="text" placeholder="Укажите фамилию*"></label>
 					<label>Отчество<input class="order-form__input-name" type="text" placeholder="Отчество, если желаете*"></label>
 
-					<label>Тел<input type="tel" placeholder="+7 ХХХ ХХ ХХ*"></label>
-					<label>E-mail<input type="email" placeholder="Ваш Email*"></label>
-					<label>Доп <textarea placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
+					<label class="order-form__title">Тел<input type="tel" placeholder="+7 ХХХ ХХ ХХ*"></label>
+					<label class="order-form__title">E-mail<input type="email" placeholder="Ваш Email*"></label>
+					<label class="order-form__title">Доп <textarea placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
 					<span class="order-form__descr"><sup>*</sup>Поля обязательны для заполнения</span>
-					<button class="btn" type="submit">Отправить заказ</button>
+					<button class="order-form__btn btn" type="submit">Отправить заказ</button>
 			</div>
 
 
@@ -111,7 +113,7 @@
 
 <!-- footer -->
 
-		<footer class="footer">
+		<footer class="footer container">
 			<ul class="footer__list">
 				<li class="footer__item"><a href="#">instagram</a></li>
 				<li class="footer__item"><a href="#">facebook</a></li>
