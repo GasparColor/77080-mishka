@@ -1,8 +1,18 @@
+.video{
+	outline: 1px solid silver;
+	padding-bottom: 30px;
+	margin-bottom: 65px;
+}
+
 .video__title{
 	font-family: $font-stack-bold;
 	font-size: 17px;
 	line-height: 24px;
 	color: #000000;
+
+	padding-left: 89px;
+	padding-top: 29px;
+	padding-bottom: 11px;
 }
 
 .video__text{
@@ -10,4 +20,16 @@
 	font-size: 13px;
 	line-height: 24px;
 	color: #444444;
+
+	padding-left: 30px;
+  padding-right: 30px;
+	margin-top: 23px;
+}
+
+.video__btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 49px;
+	margin-left: 33px;
+	margin-right: 33px;
 }
