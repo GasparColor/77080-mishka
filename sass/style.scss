@@ -1,28 +1,25 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "global/normalize.scss";
+
 @import "blocks/about-us.scss";
 @import "blocks/btn.scss";
 @import "blocks/catalog-item.scss";
-
-@import "blocks/index-catalog.scss";
 @import "blocks/contacts.scss";
-@import "blocks/video.scss";
-@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
 @import "blocks/copyright.scss";
-@import "blocks/header.scss";
 @import "blocks/featured-item.scss";
-@import "blocks/reviews.scss";
-@import "blocks/reviews-item.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/index-catalog.scss";
+@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/modal.scss";
 @import "blocks/order-form.scss";
-@import "blocks/container.scss";
-@import "blocks/logo.scss";
-@import "blocks/footer.scss";
-@import "global/normalize.scss";
-
-
-
+@import "blocks/reviews.scss";
+@import "blocks/reviews-item.scss";
+@import "blocks/video.scss";
+@import "blocks/visually-hidden.scss";
 
 body{
 	font-family: OpenSans,Arial,serif;
