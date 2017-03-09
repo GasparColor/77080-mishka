@@ -7,7 +7,18 @@
 	background-color: #f1f1f1;
 	padding-top: 75px;
 	padding-bottom: 75px;
+		&--catalog{
+			padding-top: 70px;
+    	margin-top: 0px;
+			margin-bottom: 30px;
+		}
+		&--form{
+			padding-top: 70px;
+    	margin-top: 0px;
+			margin-bottom: 23px;
+		}
 }
+
 .header__title h1{
 	font-size: 27px;
 	line-height: 30px;
