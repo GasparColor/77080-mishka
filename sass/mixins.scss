@@ -1,0 +1,19 @@
+@mixin heading-h2() {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: $color-main;
+	letter-spacing: 1px;
+}
+
+@mixin contacts-font() {
+	font-size: 15px;
+	line-height: 30px;
+	color: $color-second;
+}
+
+@mixin container() {
+	width: 320px;
+	margin: 0 auto;
+}
+

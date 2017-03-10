@@ -1,0 +1,35 @@
+.modal b {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: $color-main;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+}
+
+.modal__descr {
+	font-size: 15px;
+	line-height: 30px;
+	color: $color-second;
+}
+
+.modal label {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 17px;
+	color: $color-second;
+}
+
+.modal__btn {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 17px;
+	color: $color-third;
+	background-color: #63d1bb;
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	display: block;
+}

@@ -1,0 +1,38 @@
+.catalog-item {
+	margin-bottom: 28px;
+	outline: 1px solid silver;
+}
+
+.catalog-item__title {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	color: $color-main;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	margin-bottom: 5px;
+}
+
+.catalog-item__descr {
+	font-size: 13px;
+	line-height: 30px;
+	color: $color-second;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	display: block;
+	border-bottom: 1px solid silver;
+}
+
+.catalog-item__price {
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 24px;
+	color: $color-main;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+	padding-top: 22px;
+	padding-bottom: 25px;
+}

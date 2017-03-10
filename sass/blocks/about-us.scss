@@ -1,0 +1,25 @@
+.about-us__list {
+	padding: 0;
+	margin: 0;
+}
+
+.about-us__wrapper {
+	@include container;
+	padding: 0 30px;
+}
+.about-us__title {
+	@include heading-h2;
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+.about-us__item {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+	color: $color-main;
+	list-style-type: none;
+	padding-top: 65px;
+	padding-bottom: 18px;
+	outline: 1px solid $color-second;
+}
