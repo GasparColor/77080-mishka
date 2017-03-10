@@ -1,14 +1,13 @@
-.btn{
-    font-family: $font-stack-bold;
-		font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
-    color: #444444;
-		border: none;
-		text-decoration: none;
-		text-transform: uppercase;
-		border: 2px solid #444444;
-		padding-top: 15px;
-		padding-bottom: 15px;
+.btn {
+	font-family: $font-stack-bold;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 20px;
+	color: $color-second;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid $color-second;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
-

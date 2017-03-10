@@ -3,18 +3,13 @@
 
 @font-face {
 	font-family: "OpenSans";
-	src: local("OpenSans"),
-	 url("../fonts/OpenSans.woff2") format("woff2"),
-	  url("../fonts/OpenSans.woff") format("woff"),
-	font-style: normal;
+	src: local("OpenSans"), url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), font-style: normal;
 }
+
 
 /* font-family: "OpenSans Bold"; */
 
 @font-face {
 	font-family: "OpenSansBold";
-	src: local("OpenSansBold"),local("openSans-bold"),
-	 url("../fonts/OpenSansBold.woff2") format("woff2"),
-	 url("../fonts/OpenSansBold.woff") format("woff"),
-	font-style: normal;
+	src: local("OpenSansBold"), local("openSans-bold"), url("../fonts/OpenSansBold.woff2") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff"), font-style: normal;
 }

@@ -1,22 +1,20 @@
-.index-catalog__item{
+.index-catalog__item {
 	font-family: $font-stack-bold;
 	font-size: 19px;
 	line-height: 24px;
 	letter-spacing: 0.1em;
-	color:#ffffff;
+	color: $color-third;
 	background-color: #63d1bb;
 	text-decoration: none;
-
 	padding-top: 25px;
-	padding-right: 190px;
 	padding-bottom: 30px;
-	padding-left: 30px;
-
-	display:flex;
+	display: block;
+	text-align: center;
 	&:nth-child(2n) {
 		background-color: #56c3b2;
 	}
 }
 
-
-
+.index-catalog__wrapper {
+	@include container;
+}

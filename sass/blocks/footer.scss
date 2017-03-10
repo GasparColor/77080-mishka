@@ -1,22 +1,23 @@
-.footer{
-	background-color:#f1f1f1;
+.footer {
+	background-color: #f1f1f1;
 	padding: 30px;
 }
-
-.footer__list{
+.footer__wrapper{
+	@include container;
+}
+.footer__list {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 25px;
-  border-bottom: 1px solid silver;
+	border-bottom: 1px solid silver;
 }
-.footer__item{
+
+.footer__item {
 	list-style-type: none;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.footer__item a{
-
-
+.footer__item a {
 	text-decoration: none;
 }

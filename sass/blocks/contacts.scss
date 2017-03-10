@@ -1,8 +1,13 @@
-.contacts{
+.contacts {
 	padding-top: 25px;
 }
 
-.contacts__btn{
+.contacts__wrapper {
+	@include container;
+	padding: 0 30px;
+}
+
+.contacts__btn {
 	display: flex;
 	justify-content: center;
 	padding-top: 15px;
@@ -11,31 +16,28 @@
 	margin-bottom: 40px;
 }
 
-.contacts__title{
+.contacts__title {
 	font-family: $font-stack;
 	font-size: 18px;
 	line-height: 30px;
-	color: #000;
-
+	color: $color-main;
 	margin-bottom: 25px;
 }
 
-.contacts__email span{
+.contacts__email span {
 	@include contacts-font;
 }
 
-.contacts__email a{
+.contacts__email a {
 	@include contacts-font;
 	text-decoration: none;
 }
 
-.contacts__adress{
+.contacts__adress {
 	@include contacts-font;
 	padding-bottom: 100px;
 }
 
-.contacts__map{
+.contacts__map {
 	display: flex;
 }
-
-

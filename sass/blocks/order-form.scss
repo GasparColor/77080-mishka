@@ -1,82 +1,88 @@
-.order-form__text{
+.order-form__text {
 	font-family: $font-stack;
 	font-size: 13px;
 	line-height: 24px;
-	color: #444444;
+	color: $color-second;
 }
 
-.order-form__btn{
+.order-form__btn {
 	background-color: inherit;
 	margin-top: 33px;
 	margin-bottom: 53px;
 }
 
-.order-form__title{
+.order-form__title {
 	font-family: $font-stack-bold;
 	font-size: 17px;
 	line-height: 17px;
-	color:#63d1bb;
+	color: #63d1bb;
 	text-transform: uppercase;
-
 	margin-top: 10px;
 }
 
-.order-form label{
+.order-form label {
 	font-family: $font-stack-bold;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 600;
-	color: #000000;
+	color: $color-main;
 	padding-left: 65px;
 }
+
 .order-form__wrapper--type {
 	margin-bottom: 15px;
-  padding-bottom: 25px;
+	padding-bottom: 25px;
 }
+
 .order-form__wrapper--type label {
 	padding-top: 8px;
 }
 
-.order-form__wrapper--color{
+.order-form__wrapper--color {
 	margin-bottom: 6px;
 }
-.order-form__wrapper--color label{
+
+.order-form__wrapper--color label {
 	padding-bottom: 25px;
-  padding-top: 5px;
-}
-.order-form__wrapper--name input{
-	display: flex;
-	border:none;
-	border-bottom:1px solid silver;
-}
-.order-form__wrapper--name label{
-	padding-left: 0;
-  padding-top: 15px;
-  padding-bottom: 8px;
+	padding-top: 5px;
 }
 
-.order-form__wrapper--name input{
+.order-form__wrapper--name input {
+	display: flex;
+	border: none;
+	border-bottom: 1px solid silver;
+}
+
+.order-form__wrapper--name label {
 	padding-left: 0;
-  padding-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 8px;
+}
+
+.order-form__wrapper--name input {
+	padding-left: 0;
+	padding-top: 15px;
 	padding-bottom: 16px;
 }
 
-.order-form__wrapper{
+.order-form__wrapper {
 	display: flex;
 	flex-direction: column;
+	@include container;
+	padding: 0 30px;
 }
 
-.order-form__descr{
+.order-form__descr {
 	font-family: $font-stack;
 	font-size: 14px;
 	line-height: 16px;
-	color:#444444;
+	color: $color-second;
 }
 
-.order-form__title textarea{
+.order-form__title textarea {
 	width: 100%;
-	border: 2px solid black;
+	border: 2px solid $color-main;;
 	padding: 15px;
-  margin-top: 32px;
-  min-height: 142px;
+	margin-top: 32px;
+	min-height: 142px;
 }
