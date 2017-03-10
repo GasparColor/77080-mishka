@@ -51,3 +51,26 @@
 	display: flex;
 	justify-content: center;
 }
+
+@media #{$tablet-widths} {
+	.featured-item {
+		padding-top: 23px;
+	}
+	.featured__wrapper {
+		width: 668px;
+		padding: 0;
+	}
+	.featured-item__text {
+		font-size: 17px;
+		line-height: 30px;
+		width: 290px;
+	}
+	.featured-item__title {
+		@include heading-h2-tablet;
+	}
+	.featured-item__title-descr {
+		justify-content: flex-end;
+		display: flex;
+		transform: translateY(-46px);
+	}
+}

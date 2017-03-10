@@ -2,3 +2,11 @@
 	text-align: center;
 	padding: 20px 0;
 }
+
+@media #{$tablet-widths} {
+	.logo a {
+		display: flex;
+		justify-content: flex-start;
+		width: 170px;
+	}
+}

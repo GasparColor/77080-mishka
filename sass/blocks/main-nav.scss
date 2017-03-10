@@ -5,3 +5,34 @@
 	line-height: 24px;
 	color: #000000;
 }
+
+@media #{$tablet-widths} {
+	.main-nav {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.main-nav__toggle {
+		display: none;
+	}
+	.main-nav__list {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		transform: translateY(-45px);
+	}
+	.main-nav__item {
+		list-style-type: none;
+		margin-right: 30px;
+	}
+	.main-nav__item a {
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 15px;
+		color: $color-main;
+		line-height: 24px;
+	}
+	.main-nav__item:nth-child(1),
+	.main-nav__item:nth-child(2) {
+		margin-top: 75px;
+	}
+}
