@@ -1,5 +1,4 @@
 .order-form__text {
-	font-family: $font-stack;
 	font-size: 13px;
 	line-height: 24px;
 	color: $color-second;
@@ -12,7 +11,7 @@
 }
 
 .order-form__title {
-	font-family: $font-stack-bold;
+	font-weight: 700;
 	font-size: 17px;
 	line-height: 17px;
 	color: #63d1bb;
@@ -21,7 +20,7 @@
 }
 
 .order-form label {
-	font-family: $font-stack-bold;
+	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 600;
@@ -73,7 +72,6 @@
 }
 
 .order-form__descr {
-	font-family: $font-stack;
 	font-size: 14px;
 	line-height: 16px;
 	color: $color-second;
@@ -81,7 +79,7 @@
 
 .order-form__title textarea {
 	width: 100%;
-	border: 2px solid $color-main;;
+	border: 2px solid $color-main;
 	padding: 15px;
 	margin-top: 32px;
 	min-height: 142px;

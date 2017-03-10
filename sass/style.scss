@@ -23,7 +23,8 @@
 @import "blocks/visually-hidden.scss";
 
 body{
-	font-family: OpenSans,Arial,serif;
+	font-family: OpenSans, Arial, Helvetica, sans-serif;
+	font-weight: 400;
 }
 
 *, *::before, *::after {

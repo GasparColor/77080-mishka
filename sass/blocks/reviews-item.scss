@@ -1,5 +1,4 @@
 .reviews-item__text {
-	font-family: $font-stack;
 	font-size: 15px;
 	line-height: 30px;
 	color: $color-second;
@@ -10,7 +9,7 @@
 }
 
 .reviews-item__user-name {
-	font-family: $font-stack-bold;
+	font-weight: 700;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 24px;
@@ -21,7 +20,7 @@
 }
 
 .reviews-item__user-profile {
-	font-family: $font-stack-bold;
+	font-weight: 700;
 	font-weight: 600;
 	font-size: 17px;
 	line-height: 30px;
