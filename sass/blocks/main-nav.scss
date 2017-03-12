@@ -10,6 +10,7 @@
 	.main-nav {
 		display: flex;
 		justify-content: flex-start;
+		position: absolute;
 	}
 	.main-nav__toggle {
 		display: none;

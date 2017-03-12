@@ -3,3 +3,24 @@
 	padding-top: 15px;
 	margin-bottom: 25px;
 }
+
+@media #{$tablet-widths} {
+	.reviews__title {
+		@include heading-h2-tablet;
+		padding-top: 70px;
+	}
+	.reviews {
+		padding-left: 0;
+		background-image: url("../img/review@1x.jpg");
+		background-repeat: no-repeat;
+	}
+}
+
+@media #{$desktop-widths} {
+	.reviews__title {
+		@include heading-h1-desktop;
+	}
+	.reviews {
+		padding-left: 17%;
+	}
+}

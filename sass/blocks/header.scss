@@ -43,7 +43,6 @@
 
 @media #{$tablet-widths} {
 	.header__wrapper {
-		width: 668px;
 		outline: 1px solid blue;
 	}
 	.header__title h1 {
@@ -54,5 +53,18 @@
 	.header__title--bg {
 		width: 640px;
 		background-repeat: repeat;
+		margin-bottom: 251px;
+	}
+	.header__title--catalog {
+		font-size: 43px;
+		line-height: 50px;
+		padding-top: 100px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.header__title h1 {
+		@include heading-h1-desktop;
+		width: 620px;
 	}
 }

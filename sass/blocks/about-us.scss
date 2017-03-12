@@ -7,6 +7,7 @@
 	@include container;
 	padding: 0 30px;
 }
+
 .about-us__title {
 	@include heading-h2;
 	margin-top: 0;
@@ -22,4 +23,33 @@
 	padding-top: 65px;
 	padding-bottom: 18px;
 	outline: 1px solid $color-second;
+}
+
+@media #{$tablet-widths} {
+	.about-us__title {
+		@include heading-h2-tablet;
+		padding-left: 0;
+		padding-top: 70px;
+	}
+	.about-us__item {
+		display: inline-flex;
+		width: 330px;
+		font-size: 20px;
+		line-height: 22px;
+		margin-bottom: 28px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.about-us__title {
+		@include heading-h1-desktop;
+		padding-left: 17%;
+		padding-top: 120px;
+	}
+	.about-us__item:nth-child(2n){
+		margin-right: 175px;
+	}
+	.about-us__list {
+		margin-left: 17%;
+	}
 }

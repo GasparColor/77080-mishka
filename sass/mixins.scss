@@ -5,7 +5,13 @@
 	color: $color-main;
 	letter-spacing: 1px;
 }
-
+@mixin heading-h1-desktop() {
+	font-weight: 700;
+	font-size: 53px;
+	line-height: 57px;
+	color: $color-main;
+	letter-spacing: 0;
+}
 @mixin heading-h2-tablet() {
 	font-weight: 700;
 	font-size: 43px;
@@ -21,19 +27,23 @@
 }
 
 @mixin container() {
+	outline: 1px solid blue;
 	width: 320px;
 	margin: 0 auto;
+	@media #{$tablet-widths} {
+		width: 768px;
+		padding: 0 50px;
+	}
+	@media #{$desktop-widths} {
+		width: 1050px;
+		padding: 0;
+	}
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media #{$tablet-widths} {
-    width: 640px;
-  }
-
-  @media #{$desktop-widths} {
-    width: 960px;
-  }
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }

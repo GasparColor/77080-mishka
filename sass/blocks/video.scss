@@ -36,3 +36,19 @@
 	margin-left: 33px;
 	margin-right: 33px;
 }
+
+@media #{$tablet-widths} {
+	.video {
+		position: relative;
+	}
+	.video__wrapper {
+		width: 668px;
+	}
+	.video__title {
+		padding-top: 488px;
+	}
+	.video__item {
+		position: absolute;
+		top: 0;
+	}
+}
