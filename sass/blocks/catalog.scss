@@ -11,3 +11,12 @@
 	 padding-top: 60px;
  }
 }
+
+@media #{$desktop-widths} {
+	.catalog {
+		padding-top: 135px;
+	}
+	.catalog__wrapper {
+		padding-bottom: 285px;
+	}
+}

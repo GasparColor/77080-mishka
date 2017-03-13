@@ -84,3 +84,32 @@
 	margin-top: 32px;
 	min-height: 142px;
 }
+
+@media #{$tablet-widths} {
+	.order-form {
+		padding-top: 60px;
+	}
+	.order-form__text {
+		font-size: 17px;
+		line-height: 30px;
+
+	}
+	.order-form input {
+		padding-bottom: 40px;
+	}
+	.order-form label {
+		font-size: 19px;
+		line-height: 19px;
+		padding-bottom: 40px;
+	}
+	.order-form__wrapper {
+		padding-left: 235px;
+	}
+
+	.order-form__wrapper--color {
+
+	}
+}
+
+
+

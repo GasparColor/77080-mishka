@@ -43,16 +43,17 @@
 
 @media #{$tablet-widths} {
 	.header__wrapper {
-<<<<<<< HEAD
-
-=======
->>>>>>> 084d24409702c2b1c853ef9c96d3dd11fe0051f8
 		outline: 1px solid blue;
 	}
 	.header__title h1 {
 		font-size: 43px;
 		line-height: 50px;
 		width: 500px;
+	}
+	.header__title--form {
+		font-size: 43px;
+		line-height: 50px;
+		padding-top: 95px;
 	}
 	.header__title--bg {
 		width: 640px;
@@ -67,8 +68,7 @@
 }
 
 @media #{$desktop-widths} {
-	.header__title h1 {
+	.header__title {
 		@include heading-h1-desktop;
-		width: 620px;
 	}
 }

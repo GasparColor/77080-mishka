@@ -52,3 +52,19 @@
 		top: 0;
 	}
 }
+
+@media #{$desktop-widths} {
+	.video__wrapper {
+	@include container;
+	}
+	.video__title {
+
+
+	}
+	.video__btn {
+		width: 228px;
+	}
+	.video__text {
+		width: 228px;
+	}
+}
