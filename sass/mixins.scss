@@ -20,20 +20,14 @@
 	color: $color-second;
 }
 
+
 @mixin container() {
-	width: 320px;
-	margin: 0 auto;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media #{$tablet-widths} {
-    width: 640px;
-  }
-
-  @media #{$desktop-widths} {
-    width: 960px;
-  }
+    width: 320px;
+    margin: 0 auto;
+    @media #{$tablet-widths} {
+        width: 640px;
+    }
+    @media #{$desktop-widths} {
+        width: 960px;
+    }
 }
