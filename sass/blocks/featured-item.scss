@@ -53,12 +53,13 @@
 }
 
 @media #{$tablet-widths} {
+	.featured-item__wrapper {
+		@include clearfix;
+		float: left;
+		padding-right: 115px;
+	}
 	.featured-item {
 		padding-top: 23px;
-	}
-	.featured__wrapper {
-		width: 668px;
-		padding: 0;
 	}
 	.featured-item__text {
 		font-size: 17px;
@@ -72,5 +73,32 @@
 		justify-content: flex-end;
 		display: flex;
 		transform: translateY(-46px);
+	}
+	.featured-item__btn {
+		width: 293px;
+	}
+	.featured-item__price {
+		justify-content: flex-start;
+		padding-left: 80px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.featured-item__title {
+		@include heading-h1-desktop;
+		margin-left: 173px;
+		margin-top: 88px;
+	}
+	.featured-item__title-descr {
+		justify-content: flex-start;
+	}
+	.featured-item__wrapper {
+		padding-left: 17%;
+	}
+	.featured-item__price {
+		padding-left: 25%;
+	}
+	.featured-item__btn {
+		margin-left: 17%;
 	}
 }

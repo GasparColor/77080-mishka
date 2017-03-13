@@ -10,3 +10,10 @@
 		width: 170px;
 	}
 }
+
+@media #{$desktop-widths} {
+	.logo {
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -36,3 +36,31 @@
 	padding-top: 22px;
 	padding-bottom: 25px;
 }
+
+@media #{$tablet-widths} {
+ .catalog-item__wrapper {
+	 float: right;
+	 width: 330px;
+ }
+ .catalog-item {
+	 min-height: 333px;
+	 margin-bottom: 50px;
+ }
+}
+
+@media #{$desktop-widths} {
+	.catalog-item {
+		width: 316px;
+    display: inline-block;
+    text-align: center;
+		margin-right: 46px;
+	}
+	&:nth-child(3n){
+		margin-right: 0;
+	}
+	.catalog-item__descr {
+
+		margin: 0;
+		display: inline;
+	}
+}

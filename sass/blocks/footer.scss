@@ -2,9 +2,11 @@
 	background-color: #f1f1f1;
 	padding: 30px;
 }
-.footer__wrapper{
+
+.footer__wrapper {
 	@include container;
 }
+
 .footer__list {
 	margin: 0;
 	padding: 0;
@@ -20,4 +22,11 @@
 
 .footer__item a {
 	text-decoration: none;
+}
+
+@media #{$tablet-widths} {
+	.footer__wrapper {
+		display: flex;
+		justify-content: center;
+	}
 }

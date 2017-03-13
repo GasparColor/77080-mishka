@@ -11,3 +11,9 @@
 	justify-content: flex-start;
 	padding-left: 39px;
 }
+
+@media #{$tablet-widths} {
+	.copyright {
+		padding-top: 0;
+	}
+}

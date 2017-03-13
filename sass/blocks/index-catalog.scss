@@ -20,16 +20,25 @@
 }
 
 @media #{$tablet-widths} {
-	.index-catalog{
+	.index-catalog {
 		padding-top: 250px;
 		display: flex;
 		@include container;
 		width: 668px;
 	}
-	.index-catalog__item{
+	.index-catalog__item {
 		width: 334px;
 		text-align: left;
 		padding-left: 45px;
 		padding-right: 250px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.index-catalog__item {
+		width: 525px;
+	}
+	.index-catalog__item {
+		padding-right: 300px;
 	}
 }

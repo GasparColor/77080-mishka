@@ -2,3 +2,12 @@
 	@include container;
 	padding: 0 30px;
 }
+
+@media #{$tablet-widths} {
+ .catalog__wrapper {
+
+ }
+ .catalog {
+	 padding-top: 60px;
+ }
+}

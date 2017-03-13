@@ -40,3 +40,57 @@
 .contacts__map {
 	display: flex;
 }
+
+@media #{$tablet-widths} {
+	.contacts__title {
+		@include heading-h2-tablet;
+		margin-bottom: 50px;
+	}
+	.contacts__wrapper {
+		@include clearfix;
+	}
+	.contacts {
+		padding-top: 108px;
+	}
+	.contacts__adress {
+		font-size: 17px;
+		float: right;
+		width: 334px;
+		padding-bottom: 85px;
+	}
+	.contacts__email {
+		float: left;
+		width: 334px;
+	}
+	.contacts__email span {
+		font-size: 17px;
+	}
+	.contacts__email a {
+		font-size: 17px;
+	}
+	.contacts__btn {
+		width: 230px;
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 50px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.contacts__map {
+		float: right;
+	}
+	.contacts {
+		@include clearfix;
+		margin: 0 auto;
+		width: 1050px;
+	}
+	.contacts__wrapper {
+		width: 525px;
+		float: left;
+	}
+	.contacts__title {
+		@include heading-h1-desktop;
+	}
+}
