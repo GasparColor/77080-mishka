@@ -2,7 +2,6 @@
 	font-weight: 700;
 	font-size: 19px;
 	line-height: 24px;
-	letter-spacing: 0.1em;
 	color: $color-third;
 	background-color: #63d1bb;
 	text-decoration: none;
@@ -10,6 +9,7 @@
 	padding-bottom: 30px;
 	display: block;
 	text-align: center;
+
 	&:nth-child(2n) {
 		background-color: #56c3b2;
 	}

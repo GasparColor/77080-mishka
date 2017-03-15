@@ -4,6 +4,13 @@
 	color: $color-second;
 }
 
+.order-form__wrapper {
+	display: flex;
+	flex-direction: column;
+	@include container;
+	padding: 0 30px;
+}
+
 .order-form__btn {
 	background-color: inherit;
 	margin-top: 33px;
@@ -28,22 +35,83 @@
 	padding-left: 65px;
 }
 
-.order-form__wrapper--type {
-	margin-bottom: 15px;
-	padding-bottom: 25px;
-}
-
 .order-form__wrapper--type label {
 	padding-top: 8px;
 }
 
+.order-form__wrapper--type {
+	padding-bottom: 45px;
+
+	& input[type="radio"] {
+		display: none;
+	}
+	& input[type="radio"]+label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		margin-top: 22px;
+	}
+	& input[type="radio"]+label::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -2px;
+		left: -6px;
+		width: 40px;
+		height: 40px;
+		border: 2px solid black;
+		border-radius: 50%;
+		opacity: 0.7;
+		cursor: pointer;
+	}
+	& input[type="radio"]:checked+label::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 11px;
+		left: 7px;
+		width: 15px;
+		height: 15px;
+		background-color: #62d1ba;
+		border-radius: 50%;
+		opacity: 0.7;
+		cursor: pointer;
+	}
+}
+
 .order-form__wrapper--color {
 	margin-bottom: 6px;
+	& input[type="checkbox"] {
+		display: none;
+	}
+	& input[type="checkbox"]+label {
+		display: block;
+		position: relative;
+	}
+	& input[type="checkbox"]+label::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -10px;
+		left: -15px;
+		width: 40px;
+		height: 40px;
+		border: 2px solid black;
+		opacity: 0.7;
+		cursor: pointer;
+	}
+	& input[type="checkbox"]:checked+label::before {
+		background-image: url("../img/icon-tick.svg");
+		background-repeat: no-repeat;
+		background-position: 5px 10px;
+		opacity: 0.7;
+	}
 }
 
 .order-form__wrapper--color label {
-	padding-bottom: 25px;
+	margin-bottom: 38px;
 	padding-top: 5px;
+	margin-bottom: 13px;
 }
 
 .order-form__wrapper--name input {
@@ -64,13 +132,6 @@
 	padding-bottom: 16px;
 }
 
-.order-form__wrapper {
-	display: flex;
-	flex-direction: column;
-	@include container;
-	padding: 0 30px;
-}
-
 .order-form__descr {
 	font-size: 14px;
 	line-height: 16px;
@@ -86,13 +147,61 @@
 }
 
 @media #{$tablet-widths} {
+	.order-form__wrapper--type {
+		    padding-bottom: 0px;
+		& input[type="radio"]+label {
+			margin-top: 0;
+		}
+		& input[type="radio"]+label::before {
+			top: -10px;
+			left: -15px;
+			width: 50px;
+			height: 50px;
+		}
+		& input[type="radio"]:checked+label::after {
+			top: 5px;
+			left: 0px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.order-form__wrapper--color {
+		margin-bottom: 6px;
+		& input[type="checkbox"] {
+			display: none;
+		}
+		& input[type="checkbox"]+label {
+			margin-bottom: 50px;
+			position: relative;
+		}
+		& input[type="checkbox"]+label::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -10px;
+			left: -15px;
+			width: 50px;
+			height: 50px;
+			border: 2px solid black;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+		& input[type="checkbox"]:checked+label::before {
+			background-image: url("../img/icon-tick.svg");
+			background-repeat: no-repeat;
+			background-position: 5px 10px;
+			opacity: 0.7;
+		}
+	}
 	.order-form {
 		padding-top: 60px;
+		&__bg {
+			background-color: #f1f1f1;
+		}
 	}
 	.order-form__text {
 		font-size: 17px;
 		line-height: 30px;
-
 	}
 	.order-form input {
 		padding-bottom: 40px;
@@ -100,16 +209,42 @@
 	.order-form label {
 		font-size: 19px;
 		line-height: 19px;
-		padding-bottom: 40px;
+		margin-bottom: 50px;
 	}
 	.order-form__wrapper {
-		padding-left: 235px;
+		&--type {
+			padding-left: 232px;
+			padding-top: 61px;
+			position: relative;
+			& h2 {
+				position: absolute;
+				left: 50px;
+				top: 57px;
+			}
+		}
 	}
-
 	.order-form__wrapper--color {
+		position: relative;
+		& h2 {
+			position: absolute;
+			left: 49px;
+			top: 70px;
+		}
+		padding-top: 75px;
+		flex-direction: row;
+		padding-right: 62px;
+		;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	.order-form__wrapper--color label {
+		padding-bottom: 2px;
+		padding-top: 5px;
+		margin-bottom: 43px;
 
+		width: 219px;
+		margin-right: -5px;
+		margin-left: 46px;
 	}
 }
-
-
-

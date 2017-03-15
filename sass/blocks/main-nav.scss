@@ -34,6 +34,10 @@
 	}
 	.main-nav__item:nth-child(1),
 	.main-nav__item:nth-child(2) {
-		margin-top: 75px;
+		margin-top: 65px;
 	}
+}
+
+@media #{$desktop-widths} {
+
 }

@@ -6,12 +6,13 @@
 .about-us__wrapper {
 	@include container;
 	padding: 0 30px;
+	padding-top: 30px;
 }
 
 .about-us__title {
 	@include heading-h2;
 	margin-top: 0;
-	padding-top: 30px;
+
 }
 
 .about-us__item {
@@ -23,6 +24,36 @@
 	padding-top: 65px;
 	padding-bottom: 18px;
 	outline: 1px solid $color-second;
+	&:nth-child(1) {
+		background-image: url("../img/icon-feature-1.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
+	&:nth-child(2) {
+		background-image: url("../img/icon-feature-3.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
+	&:nth-child(3) {
+		background-image: url("../img/icon-feature-5.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
+	&:nth-child(4) {
+		background-image: url("../img/icon-feature-2.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
+	&:nth-child(5) {
+		background-image: url("../img/icon-feature-4.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
+	&:nth-child(6) {
+		background-image: url("../img/icon-feature-6.svg");
+		background-repeat: no-repeat;
+		background-position: 0px 10px;
+	}
 }
 
 @media #{$tablet-widths} {
@@ -41,12 +72,15 @@
 }
 
 @media #{$desktop-widths} {
+	.about-us{
+		padding-top: 111px;
+	}
 	.about-us__title {
 		@include heading-h1-desktop;
 		padding-left: 17%;
-		padding-top: 120px;
+		padding-top: 0;
 	}
-	.about-us__item:nth-child(2n){
+	.about-us__item:nth-child(2n) {
 		margin-right: 175px;
 	}
 	.about-us__list {

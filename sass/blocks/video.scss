@@ -45,7 +45,12 @@
 		width: 668px;
 	}
 	.video__title {
-		padding-top: 488px;
+		padding-top: 510px;/* haha lol*/
+		font-size: 20px;
+		line-height: 24px;
+		& br {
+			display: none;
+		}
 	}
 	.video__item {
 		position: absolute;
@@ -55,12 +60,13 @@
 
 @media #{$desktop-widths} {
 	.video__wrapper {
-	@include container;
+		@include container;
+		& img {
+			width: 682px;
+			height: 457px;
+		}
 	}
-	.video__title {
-
-
-	}
+	.video__title {}
 	.video__btn {
 		width: 228px;
 	}

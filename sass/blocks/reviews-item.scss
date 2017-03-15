@@ -67,3 +67,10 @@
 		display: block;
 	}
 }
+
+@media #{$desktop-widths} {
+	.reviews-item__text {
+		width: 774px;
+		margin-bottom: 19px;
+	}
+}

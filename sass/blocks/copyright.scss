@@ -10,10 +10,16 @@
 	display: flex;
 	justify-content: flex-start;
 	padding-left: 39px;
+	& a {
+		margin-left: 25px;
+	}
 }
 
 @media #{$tablet-widths} {
 	.copyright {
 		padding-top: 0;
+		& a {
+			margin-left: 25px;
+		}
 	}
 }

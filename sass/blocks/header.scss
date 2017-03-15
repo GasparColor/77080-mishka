@@ -43,12 +43,23 @@
 
 @media #{$tablet-widths} {
 	.header__wrapper {
+		position: relative;
 		outline: 1px solid blue;
+		&::before{
+			position: absolute;
+			right: 50px;
+    	top: 95px;
+			content: "Бесплатная доставка по России";
+			font-size: 15px;
+			line-height: 24px;
+
+		}
 	}
 	.header__title h1 {
 		font-size: 43px;
 		line-height: 50px;
 		width: 500px;
+		padding-top: 87px;
 	}
 	.header__title--form {
 		font-size: 43px;
@@ -68,7 +79,16 @@
 }
 
 @media #{$desktop-widths} {
-	.header__title {
+	.header__title h1 {
 		@include heading-h1-desktop;
+		& br{
+			display: none;
+		}
+	}
+	.header__wrapper::before{
+		right: 0;
+	}
+	.header__title {
+		margin-bottom: 179px;
 	}
 }

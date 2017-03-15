@@ -4,19 +4,18 @@
 }
 
 @media #{$tablet-widths} {
- .catalog__wrapper {
-
- }
- .catalog {
-	 padding-top: 60px;
- }
+	.catalog__wrapper {}
+	.catalog {
+		padding-top: 60px;
+	}
 }
 
 @media #{$desktop-widths} {
 	.catalog {
-		padding-top: 135px;
+		padding-top: 0;
 	}
 	.catalog__wrapper {
-		padding-bottom: 285px;
+		display: flex;
+		justify-content: space-between;
 	}
 }

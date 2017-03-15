@@ -19,6 +19,7 @@
 @media #{$desktop-widths} {
 	.reviews__title {
 		@include heading-h1-desktop;
+		padding-top: 63px;
 	}
 	.reviews {
 		padding-left: 17%;
