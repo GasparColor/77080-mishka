@@ -45,14 +45,13 @@
 	.header__wrapper {
 		position: relative;
 		outline: 1px solid blue;
-		&::before{
+		&::before {
 			position: absolute;
 			right: 50px;
-    	top: 95px;
+			top: 95px;
 			content: "Бесплатная доставка по России";
 			font-size: 15px;
 			line-height: 24px;
-
 		}
 	}
 	.header__title h1 {
@@ -79,16 +78,14 @@
 }
 
 @media #{$desktop-widths} {
-	.header__title h1 {
+	.header__title {
 		@include heading-h1-desktop;
-		& br{
+		margin-bottom: 90px;
+		& br {
 			display: none;
 		}
 	}
-	.header__wrapper::before{
+	.header__wrapper::before {
 		right: 0;
-	}
-	.header__title {
-		margin-bottom: 161px;
 	}
 }

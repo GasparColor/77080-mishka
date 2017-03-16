@@ -42,7 +42,7 @@
 		&__text {
 			@include contacts-font;
 			margin-top: 7px;
-    	margin-left: 11px;
+			margin-left: 11px;
 			order: 2;
 		}
 		&__btn {
@@ -75,17 +75,34 @@
 
 @media #{$desktop-widths} {
 	.video__wrapper {
-		@include container;
+		position: relative;
+		width: 1050px;
+		padding-top: 65px;
+		padding-right: 50px;
+		padding-bottom: 59px;
 		& img {
 			width: 682px;
 			height: 457px;
 		}
 	}
-	.video__title {}
+	.video__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.video__title {
+		align-self: flex-end;
+	}
 	.video__btn {
 		width: 228px;
+		align-self: flex-end;
+		margin-right: 7px;
+    margin-top: 29px;
 	}
 	.video__text {
-		width: 228px;
+		padding-top: 29px;
+    width: 283px;
+    margin-right: -14px;;
+		align-self: flex-end;
 	}
 }
