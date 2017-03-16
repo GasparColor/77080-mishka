@@ -38,30 +38,34 @@
 }
 
 @media #{$tablet-widths} {
- .catalog-item__wrapper {
-	 float: right;
-	 width: 330px;
- }
- .catalog-item {
-	 min-height: 333px;
-	 margin-bottom: 50px;
- }
+	.catalog-item__wrapper {
+		float: right;
+		width: 330px;
+	}
+	.catalog-item {
+		min-height: 333px;
+		margin-bottom: 50px;
+		&__title {
+			padding-top: 7px;
+			margin-bottom: 5px;
+		}
+		&__image {
+			width: 333px;
+			height: 333px;
+		}
+	}
 }
 
 @media #{$desktop-widths} {
 	.catalog-item {
 		width: 316px;
-
-    text-align: center;
-
+		text-align: center;
 		&__image {
 			width: 316px;
 			height: 464px;
 		}
-
 	}
 	.catalog-item__descr {
-
 		margin: 0;
 		display: inline;
 	}

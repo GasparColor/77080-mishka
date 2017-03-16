@@ -40,12 +40,21 @@
 @media #{$tablet-widths} {
 	.video {
 		position: relative;
+		&__text {
+			@include contacts-font;
+			margin-top: 19px;
+		}
+		&__btn {
+			margin-top: 35px;
+		}
 	}
 	.video__wrapper {
 		width: 668px;
+		padding-bottom: 47px;
 	}
 	.video__title {
-		padding-top: 510px;/* haha lol*/
+		padding-top: 492px;
+		/* haha lol*/
 		font-size: 20px;
 		line-height: 24px;
 		& br {
@@ -55,6 +64,8 @@
 	.video__item {
 		position: absolute;
 		top: 0;
+		width: 666px;
+		height: 455px;
 	}
 }
 
