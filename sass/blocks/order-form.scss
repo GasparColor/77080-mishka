@@ -37,11 +37,11 @@
 
 .order-form__wrapper--type label {
 	padding-top: 8px;
+	margin-bottom: 50px;
 }
 
 .order-form__wrapper--type {
 	padding-bottom: 45px;
-
 	& input[type="radio"] {
 		display: none;
 	}
@@ -111,7 +111,7 @@
 .order-form__wrapper--color label {
 	margin-bottom: 38px;
 	padding-top: 5px;
-	margin-bottom: 13px;
+	margin-bottom: 38px;
 }
 
 .order-form__wrapper--name input {
@@ -148,7 +148,7 @@
 
 @media #{$tablet-widths} {
 	.order-form__wrapper--type {
-		    padding-bottom: 0px;
+		padding-bottom: 0px;
 		& input[type="radio"]+label {
 			margin-top: 0;
 		}
@@ -203,13 +203,10 @@
 		font-size: 17px;
 		line-height: 30px;
 	}
-	.order-form input {
-		padding-bottom: 40px;
-	}
+	.order-form input {}
 	.order-form label {
 		font-size: 19px;
 		line-height: 19px;
-		margin-bottom: 50px;
 	}
 	.order-form__wrapper {
 		&--type {
@@ -242,9 +239,26 @@
 		padding-bottom: 2px;
 		padding-top: 5px;
 		margin-bottom: 43px;
-
 		width: 219px;
 		margin-right: -5px;
 		margin-left: 46px;
+	}
+	.order-form__foorer-bg{
+		outline: 10px solid red;
+	}
+	.order-form__wrapper--name {
+		position: relative;
+		padding-top: 42px;
+		padding-left: 215px;
+		& input {
+			display: inline;
+			margin-left: 45px;
+			width: 70%;
+			& h2 {
+				position: absolute;
+				left: 48px;
+				top: 64px;
+			}
+		}
 	}
 }
