@@ -49,9 +49,10 @@
 	align-self: flex-end;
 	margin-right: 15px;
 	@include contacts-font;
-	&-title {
-		margin-right: 30px;
-	}
+}
+
+.contacts__adress-title {
+	margin-right: 30px;
 }
 
 .contacts__map {
@@ -82,16 +83,16 @@
 		float: right;
 		width: 334px;
 		padding-bottom: 60px;
-		&-title {
-			margin-right: 45px;
-		}
-		&-text {
-			& br {
-				display: none;
-			}
-			width: 225px;
-			display: inline-flex;
-		}
+	}
+	.contacts__adress-title {
+		margin-right: 45px;
+	}
+	.contacts__adress-text {
+		width: 225px;
+		display: inline-flex;
+	}
+	.contacts__adress-text br {
+		display: none;
 	}
 	.contacts__email {
 		float: left;
@@ -129,10 +130,10 @@
 		width: 1050px;
 		position: relative;
 		padding-bottom: 65px;
-		&__btn {
-			margin-left: 185px;
-			margin-top: 18px;
-		}
+	}
+	.contacts__btn {
+		margin-left: 185px;
+		margin-top: 18px;
 	}
 	.contacts__wrapper {
 		width: 525px;

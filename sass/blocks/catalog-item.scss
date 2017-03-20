@@ -45,14 +45,14 @@
 	.catalog-item {
 		min-height: 333px;
 		margin-bottom: 50px;
-		&__title {
-			padding-top: 7px;
-			margin-bottom: 5px;
-		}
-		&__image {
-			width: 333px;
-			height: 333px;
-		}
+	}
+	.catalog-item__title {
+		padding-top: 7px;
+		margin-bottom: 5px;
+	}
+	.catalog-item__image {
+		width: 333px;
+		height: 333px;
 	}
 }
 
@@ -60,10 +60,10 @@
 	.catalog-item {
 		width: 316px;
 		text-align: center;
-		&__image {
-			width: 316px;
-			height: 464px;
-		}
+	}
+	.catalog-item__image {
+		width: 316px;
+		height: 464px;
 	}
 	.catalog-item__descr {
 		margin: 0;

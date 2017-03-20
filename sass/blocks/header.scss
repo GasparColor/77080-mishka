@@ -81,11 +81,12 @@
 	.header__title {
 		@include heading-h1-desktop;
 		margin-bottom: 90px;
-		& br {
-			display: none;
-		}
 	}
-	.header__wrapper::before {
-		right: 0;
+	.header__title br {
+		display: none;
 	}
+}
+
+.header__wrapper::before {
+	right: 0;
 }

@@ -42,70 +42,78 @@
 
 .order-form__wrapper--type {
 	padding-bottom: 45px;
-	& input[type="radio"] {
-		display: none;
-	}
-	& input[type="radio"]+label {
-		display: block;
-		position: relative;
-		cursor: pointer;
-		margin-top: 22px;
-	}
-	& input[type="radio"]+label::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: -2px;
-		left: -6px;
-		width: 40px;
-		height: 40px;
-		border: 2px solid black;
-		border-radius: 50%;
-		opacity: 0.7;
-		cursor: pointer;
-	}
-	& input[type="radio"]:checked+label::after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 11px;
-		left: 7px;
-		width: 15px;
-		height: 15px;
-		background-color: #62d1ba;
-		border-radius: 50%;
-		opacity: 0.7;
-		cursor: pointer;
-	}
+}
+
+.order-form__wrapper--type input[type="radio"] {
+	display: none;
+}
+
+.order-form__wrapper--type input[type="radio"]+label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	margin-top: 22px;
+}
+
+.order-form__wrapper--type input[type="radio"]+label::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: -6px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 50%;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.order-form__wrapper--type input[type="radio"]:checked+label::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 7px;
+	width: 15px;
+	height: 15px;
+	background-color: #62d1ba;
+	border-radius: 50%;
+	opacity: 0.7;
+	cursor: pointer;
 }
 
 .order-form__wrapper--color {
 	margin-bottom: 6px;
-	& input[type="checkbox"] {
-		display: none;
-	}
-	& input[type="checkbox"]+label {
-		display: block;
-		position: relative;
-	}
-	& input[type="checkbox"]+label::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: -10px;
-		left: -15px;
-		width: 40px;
-		height: 40px;
-		border: 2px solid black;
-		opacity: 0.7;
-		cursor: pointer;
-	}
-	& input[type="checkbox"]:checked+label::before {
-		background-image: url("../img/icon-tick.svg");
-		background-repeat: no-repeat;
-		background-position: 5px 10px;
-		opacity: 0.7;
-	}
+}
+
+.order-form__wrapper--color input[type="checkbox"] {
+	display: none;
+}
+
+.order-form__wrapper--color input[type="checkbox"]+label {
+	display: block;
+	position: relative;
+}
+
+.order-form__wrapper--color input[type="checkbox"]+label::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: -15px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.order-form__wrapper--color input[type="checkbox"]:checked+label::before {
+	background-image: url("../img/icon-tick.svg");
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+	opacity: 0.7;
 }
 
 .order-form__wrapper--color label {
@@ -149,49 +157,49 @@
 @media #{$tablet-widths} {
 	.order-form__wrapper--type {
 		padding-bottom: 0px;
-		& input[type="radio"]+label {
-			margin-top: 0;
-		}
-		& input[type="radio"]+label::before {
-			top: -10px;
-			left: -15px;
-			width: 50px;
-			height: 50px;
-		}
-		& input[type="radio"]:checked+label::after {
-			top: 5px;
-			left: 0px;
-			width: 20px;
-			height: 20px;
-		}
+	}
+	.order-form__wrapper--type input[type="radio"]+label {
+		margin-top: 0;
+	}
+	.order-form__wrapper--type input[type="radio"]+label::before {
+		top: -10px;
+		left: -15px;
+		width: 50px;
+		height: 50px;
+	}
+	.order-form__wrapper--type input[type="radio"]:checked+label::after {
+		top: 5px;
+		left: 0px;
+		width: 20px;
+		height: 20px;
 	}
 	.order-form__wrapper--color {
 		margin-bottom: 6px;
-		& input[type="checkbox"] {
-			display: none;
-		}
-		& input[type="checkbox"]+label {
-			margin-bottom: 50px;
-			position: relative;
-		}
-		& input[type="checkbox"]+label::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: -10px;
-			left: -15px;
-			width: 50px;
-			height: 50px;
-			border: 2px solid black;
-			opacity: 0.7;
-			cursor: pointer;
-		}
-		& input[type="checkbox"]:checked+label::before {
-			background-image: url("../img/icon-tick.svg");
-			background-repeat: no-repeat;
-			background-position: 5px 10px;
-			opacity: 0.7;
-		}
+	}
+	.order-form__wrapper--color input[type="checkbox"] {
+		display: none;
+	}
+	.order-form__wrapper--color input[type="checkbox"]+label {
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.order-form__wrapper--color input[type="checkbox"]+label::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -10px;
+		left: -15px;
+		width: 50px;
+		height: 50px;
+		border: 2px solid black;
+		opacity: 0.7;
+		cursor: pointer;
+	}
+	.order-form__wrapper--color input[type="checkbox"]:checked+label::before {
+		background-image: url("../img/icon-tick.svg");
+		background-repeat: no-repeat;
+		background-position: 5px 10px;
+		opacity: 0.7;
 	}
 	.order-form {
 		padding-top: 60px;
@@ -221,25 +229,18 @@
 		font-size: 19px;
 		line-height: 19px;
 	}
-	.order-form__wrapper {
-		&--type {
-			padding-left: 232px;
-			padding-top: 61px;
-			position: relative;
-			& h2 {
-				position: absolute;
-				left: 50px;
-				top: 57px;
-			}
-		}
+	.order-form__wrapper--type {
+		padding-left: 232px;
+		padding-top: 61px;
+		position: relative;
+	}
+	.order-form__wrapper--type h2 {
+		position: absolute;
+		left: 50px;
+		top: 57px;
 	}
 	.order-form__wrapper--color {
 		position: relative;
-		& h2 {
-			position: absolute;
-			left: 49px;
-			top: 70px;
-		}
 		padding-top: 75px;
 		flex-direction: row;
 		padding-right: 62px;
@@ -247,6 +248,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+	}
+	.order-form__wrapper--color h2 {
+		position: absolute;
+		left: 49px;
+		top: 70px;
 	}
 	.order-form__wrapper--color label {
 		padding-bottom: 2px;
@@ -265,22 +271,22 @@
 		padding-top: 42px;
 		padding-left: 215px;
 		padding-bottom: 38px;
-		& label {
-			display: flex;
-			align-items: baseline;
-		}
-		& input {
-			margin-left: 29px;
-			padding-left: 17px;
-			flex-grow: 1;
-			padding-right: 25px;
-			margin-right: 6px;
-		}
-		& h2 {
-			position: absolute;
-			left: 48px;
-			top: 64px;
-		}
+	}
+	.order-form__wrapper--name label {
+		display: flex;
+		align-items: baseline;
+	}
+	.order-form__wrapper--name input {
+		margin-left: 29px;
+		padding-left: 17px;
+		flex-grow: 1;
+		padding-right: 25px;
+		margin-right: 6px;
+	}
+	.order-form__wrapper--name h2 {
+		position: absolute;
+		left: 48px;
+		top: 64px;
 	}
 	.order-form__wrapper--contacts {
 		padding-left: 44px;
@@ -289,28 +295,28 @@
 	}
 	.order-form__wrapper-name-inner {
 		background-color: #f1f1f1;
-		& label {
-			color: #63d1bb;
-			margin-top: 0;
-		}
-		& input {
-			background-color: inherit;
-			margin-left: 104px;
-			margin-top: 0;
-		}
+	}
+	.order-form__wrapper-name-inner label {
+		color: #63d1bb;
+		margin-top: 0;
+	}
+	.order-form__wrapper-name-inner input {
+		background-color: inherit;
+		margin-left: 104px;
+		margin-top: 0;
 	}
 	.order-form__wrapper--textarea {
 		outline: 2px solid red;
 		padding-left: 45px;
 		margin-top: 0;
 		padding-top: 24px;
-		& label {
-			color: #63d1bb;
-		}
-		& textarea {
-			margin-left: 125px;
-			margin-top: 0;
-		}
+	}
+	.order-form__wrapper--textarea label {
+		color: #63d1bb;
+	}
+	.order-form__wrapper--textarea textarea {
+		margin-left: 125px;
+		margin-top: 0;
 	}
 }
 
@@ -330,44 +336,44 @@
 	.order-form__wrapper--name {
 		padding-top: 26px;
 		padding-left: 175px;
-		& input {
-			margin-right: 176px;
-		}
-		& h2 {
-			left: 58px;
-			top: 52px;
-		}
+	}
+	.order-form__wrapper--name input {
+		margin-right: 176px;
+	}
+	.order-form__wrapper--name h2 {
+		left: 58px;
+		top: 52px;
 	}
 	.order-form__wrapper--color {
 		padding-top: 60px;
 		padding-right: 120px;
 		padding-bottom: 14px;
-		& h2 {
-			left: 59px;
-			top: 56px;
-		}
+	}
+	.order-form__wrapper--color h2 {
+		left: 59px;
+		top: 56px;
 	}
 	.order-form__wrapper--type {
 		padding-left: 189px;
 		padding-top: 66px;
 		padding-bottom: 15px;
-		& h2 {
-			left: 63px;
-			top: 63px;
-		}
+	}
+	.order-form__wrapper--type h2 {
+		left: 63px;
+		top: 63px;
 	}
 	.order-form__wrapper--contacts {
 		padding-left: 56px;
 		padding-top: 36px;
-		& input {
-			margin-left: 81px;
-		}
+	}
+	.order-form__wrapper--contacts input {
+		margin-left: 81px;
 	}
 	.order-form__wrapper--textarea {
 		padding-left: 60px;
-		& textarea {
-			margin-left: 71px;
-			margin-right: 177px;
-		}
+	}
+	.order-form__wrapper--textarea textarea {
+		margin-left: 71px;
+		margin-right: 177px;
 	}
 }
