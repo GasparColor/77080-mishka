@@ -2,13 +2,18 @@
 	background-color: #f1f1f1;
 	padding: 30px;
 }
-.footer__wrapper{
+
+.footer__wrapper {
 	@include container;
+	padding-left: 33px;
 }
+
 .footer__list {
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid silver;
 }
 
@@ -20,4 +25,24 @@
 
 .footer__item a {
 	text-decoration: none;
+	font-size: 0px;
+	margin-right: 40px;
+	;
+}
+
+@media #{$tablet-widths} {
+	.footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 13px;
+	}
+	.footer {
+		padding: 50px;
+	}
+	.footer__list {
+		border: none;
+		display: flex;
+		padding-bottom: none;
+		margin-left: 95px;
+	}
 }

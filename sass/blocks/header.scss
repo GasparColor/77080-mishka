@@ -18,6 +18,10 @@
 	}
 }
 
+.header__wrapper {
+	@include container;
+}
+
 .header__title h1 {
 	font-size: 27px;
 	line-height: 30px;
@@ -35,4 +39,54 @@
 	border-top: 1px solid rgba(68, 68, 68, 0.19);
 	padding-top: 68px;
 	padding-bottom: 122px;
+}
+
+@media #{$tablet-widths} {
+	.header__wrapper {
+		position: relative;
+		outline: 1px solid blue;
+		&::before {
+			position: absolute;
+			right: 50px;
+			top: 95px;
+			content: "Бесплатная доставка по России";
+			font-size: 15px;
+			line-height: 24px;
+		}
+	}
+	.header__title h1 {
+		font-size: 43px;
+		line-height: 50px;
+		width: 500px;
+		padding-top: 87px;
+	}
+	.header__title--form {
+		font-size: 43px;
+		line-height: 50px;
+		padding-top: 95px;
+	}
+	.header__title--bg {
+		width: 640px;
+		background-repeat: repeat;
+		margin-bottom: 251px;
+	}
+	.header__title--catalog {
+		font-size: 43px;
+		line-height: 50px;
+		padding-top: 100px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.header__title {
+		@include heading-h1-desktop;
+		margin-bottom: 90px;
+	}
+	.header__title br {
+		display: none;
+	}
+}
+
+.header__wrapper::before {
+	right: 0;
 }

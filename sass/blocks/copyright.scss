@@ -11,3 +11,16 @@
 	justify-content: flex-start;
 	padding-left: 39px;
 }
+
+.copyright a {
+	margin-left: 25px;
+}
+
+@media #{$tablet-widths} {
+	.copyright {
+		padding-top: 0;
+	}
+	.copyright a {
+		margin-left: 25px;
+	}
+}

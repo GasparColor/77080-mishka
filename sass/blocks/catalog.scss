@@ -2,3 +2,20 @@
 	@include container;
 	padding: 0 30px;
 }
+
+@media #{$tablet-widths} {
+	.catalog__wrapper {}
+	.catalog {
+		padding-top: 60px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.catalog {
+		padding-top: 0;
+	}
+	.catalog__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+}

@@ -38,3 +38,39 @@
 	height: 50px;
 	border: 1px solid black;
 }
+
+@media #{$tablet-widths} {
+	.reviews-item {
+		position: relative;
+	}
+	.reviews-item__text {
+		font-size: 17px;
+		line-height: 30px;
+		margin-top: 58px;
+		margin-bottom: 50px;
+	}
+	.reviews-item__submit-btn {
+		display: block;
+		width: 175px;
+		text-align: center;
+		position: absolute;
+		top: -100px;
+		right: 0;
+	}
+	.reviews-item__arrows {
+		width: 167px;
+		float: right;
+		margin-top: -55px;
+		margin-bottom: 0;
+	}
+	.reviews-item__user-profile {
+		display: block;
+	}
+}
+
+@media #{$desktop-widths} {
+	.reviews-item__text {
+		width: 774px;
+		margin-bottom: 19px;
+	}
+}
