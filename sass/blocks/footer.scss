@@ -43,6 +43,11 @@
 		border: none;
 		display: flex;
 		padding-bottom: none;
-		margin-left: 95px;
+		margin-left: 146px;
+	}
+}
+@media #{$desktop-widths} {
+	.footer__wrapper{
+		position: relative;
 	}
 }

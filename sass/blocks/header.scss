@@ -44,11 +44,11 @@
 @media #{$tablet-widths} {
 	.header__wrapper {
 		position: relative;
-		outline: 1px solid blue;
+		padding-top: 21px;
 		&::before {
 			position: absolute;
 			right: 50px;
-			top: 95px;
+			top: 106px;
 			content: "Бесплатная доставка по России";
 			font-size: 15px;
 			line-height: 24px;
@@ -66,9 +66,15 @@
 		padding-top: 95px;
 	}
 	.header__title--bg {
-		width: 640px;
-		background-repeat: repeat;
-		margin-bottom: 251px;
+		padding-top: 64px;
+		height: 625px;
+		width: 100%;
+		background-size: 1150px auto;
+		background-position: center -4px;
+		background-image: url("../img/hero-desktop@1x.jpg");
+		@media #{$retina} {
+			background-image: url("../img/hero-desktop@2x.jpg");
+		}
 	}
 	.header__title--catalog {
 		font-size: 43px;
@@ -78,15 +84,18 @@
 }
 
 @media #{$desktop-widths} {
-	.header__title {
+	.header__wrapper {
+		padding-top: 0;
+	}
+	.header__title h1 {
 		@include heading-h1-desktop;
 		margin-bottom: 90px;
+		width: 700px;
 	}
 	.header__title br {
 		display: none;
 	}
-}
-
-.header__wrapper::before {
-	right: 0;
+	.header__wrapper::before {
+		right: 0;
+	}
 }
