@@ -75,9 +75,8 @@
 	}
 	.reviews-item__arrows {
 		float: right;
-		margin-top: -43px;
+		margin-top: -51px;
 		margin-right: 19px;
-		;
 		margin-bottom: 0;
 		border: none;
 	}
@@ -99,6 +98,6 @@
 @media #{$desktop-widths} {
 	.reviews-item__text {
 		width: 774px;
-		margin-bottom: 19px;
+		margin-bottom: 28px;
 	}
 }

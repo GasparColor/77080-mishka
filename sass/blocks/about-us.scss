@@ -21,7 +21,8 @@
 	color: $color-main;
 	list-style-type: none;
 	padding-top: 65px;
-	padding-bottom: 18px;;
+	padding-bottom: 18px;
+	;
 	&:nth-child(1) {
 		background-image: url("../img/icon-feature-1.svg");
 		background-repeat: no-repeat;
@@ -82,16 +83,21 @@
 
 @media #{$desktop-widths} {
 	.about-us {
-		padding-top: 111px;
+		padding-top: 46px;
+		background-image: url("../img/bg-zigzag-line.svg");
+		background-repeat: repeat-x;
+		background-position: 0px 1175px;
+		padding-bottom: 104px;
 	}
 	.about-us__title {
 		@include heading-h1-desktop;
 		padding-left: 17%;
 		padding-top: 0;
 	}
-	.about-us__item:nth-child(2n) {
-
+	.about-us__item {
+		width: 347px;
 	}
+	.about-us__item:nth-child(2n) {}
 	.about-us__list {
 		margin-left: 17%;
 	}

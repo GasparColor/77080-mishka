@@ -46,8 +46,12 @@
 		margin-left: 146px;
 	}
 }
+
 @media #{$desktop-widths} {
-	.footer__wrapper{
+	.footer__wrapper {
 		position: relative;
+	}
+	.footer__list {
+		margin-left: auto;
 	}
 }

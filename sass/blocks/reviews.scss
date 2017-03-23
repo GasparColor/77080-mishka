@@ -12,6 +12,9 @@
 	.reviews {
 		padding-left: 0;
 		background-image: url("../img/review@1x.jpg");
+		@media #{$retina} {
+			background-image: url("../img/review@2x.jpg");
+		}
 		background-repeat: no-repeat;
 	}
 }
@@ -19,9 +22,10 @@
 @media #{$desktop-widths} {
 	.reviews__title {
 		@include heading-h1-desktop;
-		padding-top: 63px;
+		margin-top: 30px;
 	}
 	.reviews {
 		padding-left: 17%;
+		padding-bottom: 40px;
 	}
 }

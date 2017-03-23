@@ -19,7 +19,12 @@
 	line-height: 30px;
 	color: $color-second;
 }
-
+.modal input[type="radio"] {
+	dissplay: none;
+}
+.modal input[type="radio"]:checked ~ .modal label{
+	outline: 1px solid red;
+}
 .modal label {
 	font-weight: 700;
 	font-size: 17px;
