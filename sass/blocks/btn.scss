@@ -9,4 +9,11 @@
 	border: 2px solid $color-second;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	&:hover {
+		background-color: $color-second;
+		color: $color-third;
+	}
+	&:active{
+		color: $color-third-opacity;
+	}
 }

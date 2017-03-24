@@ -19,6 +19,12 @@
 	&--next {
 		margin-left: 15px;
 	}
+	&:hover {
+		opacity: 0.6;
+	}
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .reviews-item__user-name {

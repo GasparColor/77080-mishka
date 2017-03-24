@@ -3,7 +3,7 @@
 	line-height: 30px;
 	text-align: center;
 	color: $color-main;
-	background-color: #f1f1f1;
+/*background-color: #f1f1f1;*/
 	padding-top: 75px;
 	padding-bottom: 75px;
 	&--catalog {
@@ -105,6 +105,13 @@
 		width: 700px;
 	}
 	.header__title--catalog{
+		@include heading-h1-desktop;
+		background-position: 31px 237px;
+		padding-bottom: 109px;
+		background-image: url("../img/bg-zigzag-fill.svg");
+		margin-bottom: 0;
+	}
+	.header__title--form{
 		@include heading-h1-desktop;
 		background-position: 31px 237px;
 		padding-bottom: 109px;

@@ -210,10 +210,9 @@
 }
 
 @media #{$tablet-widths} {
-
 	.order-form__wrapper--type input[type="radio"]+label {
 		margin-bottom: 49px;
-    margin-top: 0px;
+		margin-top: 0px;
 	}
 	.order-form__wrapper--type input[type="radio"]+label::before {
 		top: -10px;
@@ -294,10 +293,9 @@
 		position: relative;
 		padding-top: 59px;
 		padding-bottom: 14px;
-    margin-top: 0;
+		margin-top: 0;
 		flex-direction: row;
 		padding-right: 62px;
-
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
@@ -382,24 +380,32 @@
 		margin-left: 113px;
 	}
 	.order-form__text {
+		margin-top: 72px;
+		margin-bottom: 0px;
 		padding-left: 173px;
 		padding-right: 156px;
 	}
+	.order-form__wrapper-name-inner {
+    padding-top: 0px;
+}
 	.order-form__wrapper--name {
-		padding-top: 26px;
-		padding-left: 175px;
+		padding-top: 36px;
+    padding-left: 180px;
 	}
 	.order-form__wrapper--name input {
 		margin-right: 176px;
 	}
 	.order-form__wrapper--name h2 {
-		left: 58px;
-		top: 52px;
+		left: 64px;
+    top: 59px;
 	}
 	.order-form__wrapper--color {
 		padding-top: 60px;
 		padding-right: 120px;
-		padding-bottom: 14px;
+		padding-bottom: 20px;
+		&::before {
+			display: none;
+		}
 	}
 	.order-form__wrapper--color h2 {
 		left: 59px;
@@ -407,12 +413,16 @@
 	}
 	.order-form__wrapper--type {
 		padding-left: 189px;
-		padding-top: 66px;
+		padding-top: 0;
+		margin-top: 21px;
 		padding-bottom: 15px;
 	}
 	.order-form__wrapper--type h2 {
-		left: 63px;
-		top: 63px;
+		left: -122px;
+		top: 28px;
+		&::before {
+			display: none;
+		}
 	}
 	.order-form__wrapper--contacts {
 		padding-left: 56px;
@@ -424,6 +434,9 @@
 	.order-form__wrapper--textarea {
 		padding-left: 60px;
 	}
+	.order-form__wrapper--textarea label {
+    margin-top: 0px;
+}
 	.order-form__wrapper--textarea textarea {
 		margin-left: 71px;
 		margin-right: 177px;
