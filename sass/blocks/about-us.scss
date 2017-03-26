@@ -96,8 +96,13 @@
 	}
 	.about-us__item {
 		width: 347px;
+		&:nth-child(4) {
+			width: 262px;
+		}
+		&:nth-child(6){
+			width: 292px;
+		}
 	}
-	.about-us__item:nth-child(2n) {}
 	.about-us__list {
 		margin-left: 17%;
 	}

@@ -38,6 +38,7 @@
 }
 
 @media #{$tablet-widths} {
+
 	.catalog-item__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -46,6 +47,9 @@
 	.catalog-item {
 		margin-bottom: 52px;
 		display: flex;
+	}
+	.catalog-item picture{
+		line-height: 0;
 	}
 	.catalog-item__descr {
 		font-size: 15px;
@@ -90,7 +94,13 @@
 		margin: 0;
 		display: inline;
 	}
+	.catalog-item__title {
+		min-height: 55px;
+	}
 	.catalog-item__title br {
 		display: none;
+	}
+	.catalog-item__wrapper {
+		width: 100%;
 	}
 }

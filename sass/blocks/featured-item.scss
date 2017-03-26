@@ -124,13 +124,13 @@
 @media #{$desktop-widths} {
 	.featured {
 		background-repeat: repeat-x;
-    background-position: 8px 782px;
+		background-position: 8px 782px;
 	}
 	.featured-item {
 		padding-top: 79px;
 		padding-bottom: 106px;
 	}
-	.featured-item__text{
+	.featured-item__text {
 		padding-bottom: 34px;
 	}
 	.featured-item__title {
@@ -139,7 +139,7 @@
 	}
 	.featured-item__title-descr {
 		margin-left: 40px;
-    text-align: center;
+		text-align: center;
 	}
 	.featured-item__wrapper {
 		padding-left: 17%;
@@ -154,8 +154,7 @@
 	.featured-item__img {
 		position: absolute;
 		top: 74px;
-		margin-left: 18px;
+		margin-left: 13px;
 		z-index: -1;
-
 	}
 }
