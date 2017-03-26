@@ -62,10 +62,13 @@
 
 @media #{$tablet-widths} {
 	.featured {
-		background-image: url("../img/bg-zigzag-line.svg");
-		background-repeat: no-repeat;
-		background-position: 0px 612px;
+		background-image: url("../img/bg-zigzag-fill.svg");
+		background-position: center top;
+		background-size: auto 24px;
+		background-repeat: repeat-x;
 		position: relative;
+		z-index: 100;
+		margin-top: -15px;
 	}
 	.featured-item__wrapper {
 		@include clearfix;
@@ -73,8 +76,8 @@
 		margin-right: 44px;
 	}
 	.featured-item {
-		padding-top: 9px;
-		padding-bottom: 80px;
+		padding-top: 24px;
+		padding-bottom: 52px;
 	}
 	.featurted-item__img {
 		top: 154px;
@@ -123,12 +126,11 @@
 
 @media #{$desktop-widths} {
 	.featured {
-		background-repeat: repeat-x;
-		background-position: 8px 782px;
+		padding-top: 16px;
 	}
 	.featured-item {
 		padding-top: 79px;
-		padding-bottom: 106px;
+		padding-bottom: 73px;
 	}
 	.featured-item__text {
 		padding-bottom: 34px;
@@ -153,7 +155,7 @@
 	}
 	.featured-item__img {
 		position: absolute;
-		top: 74px;
+		top: 89px;
 		margin-left: 13px;
 		z-index: -1;
 	}

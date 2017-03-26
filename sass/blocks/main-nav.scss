@@ -6,6 +6,29 @@
 	color: #000000;
 }
 
+.main-nav__icon {
+	position: absolute;
+	fill: #231F20;
+	&:hover{
+		fill: #63d1bb;
+  opacity: 1;
+	}
+	&:active{
+		opacity: 0.3;
+	}
+}
+
+.main-nav__icon--search {
+	top: 50%;
+	left: 32px;
+	margin-top: -9px;
+	opacity: 0.2;
+}
+
+.main-nav__item {
+	position: relative;
+}
+
 .main-nav__item a {
 	&:hover {
 		opacity: 0.6;
@@ -20,6 +43,12 @@
 }
 
 @media #{$tablet-widths} {
+	.main-nav__icon--cart {
+		top: 14%;
+		left: -46px;
+		margin-top: -9px;
+		opacity: 0.2;
+	}
 	.main-nav {
 		display: flex;
 		justify-content: flex-start;
@@ -68,7 +97,7 @@
 		position: relative;
 		;
 	}
-	.main-nav__item--basket a {
+	/*	.main-nav__item--basket a {
 		position: relative;
 	}
 	.main-nav__item--basket a::before {
@@ -77,9 +106,8 @@
 		position: absolute;
 		left: -48px;
 		top: 4px;
-	}
+	}*/
 	.main-nav__search {
-		opacity: 0.2;
 		border-left: 1px solid #ececec;
 		border-right: 1px solid #ececec;
 		width: 80px;
@@ -87,9 +115,9 @@
 		top: -46px;
 		left: -5px;
 		height: 91px;
-		background-image: url(../img/icon-search.svg);
+		/*background-image: url(../img/icon-search.svg);
 		background-repeat: no-repeat;
-		background-position: 30px 37px;
+		background-position: 30px 37px;*/
 		&:hover {}
 	}
 	.main-nav__search a {
@@ -100,18 +128,23 @@
 		padding-left: 25px;
 		font-size: 0;
 	}
-	.main-nav__item--basket{
-
-		    /* margin-top: 0; */
-    margin: 0;
-    /* padding: 0; */
-    margin-bottom: 0;
-    margin-top: -16px;
-    margin-left: 75px;
+	.main-nav__item--basket {
+		/* margin-top: 0; */
+		margin: 0;
+		/* padding: 0; */
+		margin-bottom: 0;
+		margin-top: -16px;
+		margin-left: 75px;
 	}
 }
 
 @media #{$desktop-widths} {
+	.main-nav__icon--cart {
+		top: 49%;
+		left: -43px;
+		margin-top: -9px;
+		opacity: 0.2;
+	}
 	.main-nav {
 		position: relative;
 	}
@@ -158,13 +191,11 @@
 		margin-left: -35px;
 		padding-bottom: 48px;
 	}
-	.main-nav__item--basket{
-
+	.main-nav__item--basket {
 		padding: 0;
-    margin: 0;
-    margin-left: 73px;
-    padding-top: 31px;
-
+		margin: 0;
+		margin-left: 73px;
+		padding-top: 31px;
 	}
 	.main-nav__item--desktop {
 		display: inline;
@@ -179,11 +210,11 @@
 		line-height: 24px;
 		&:nth-child(2n) {
 			left: 205px;
-    top: 76px;
-    margin-top: 17px;
-    padding-top: 14px;
-    margin-left: 0;
-    padding-left: 15px;
+			top: 76px;
+			margin-top: 17px;
+			padding-top: 14px;
+			margin-left: 0;
+			padding-left: 15px;
 		}
 	}
 }

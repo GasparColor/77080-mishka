@@ -19,6 +19,7 @@
 }
 
 .order-form__title {
+	position: relative;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 17px;
@@ -27,8 +28,24 @@
 	margin-top: 10px;
 }
 
+.order-form__tel-icon {
+	position: absolute;
+	top: 43px;
+	right: 7px;
+	fill: #000000;
+	opacity: 0.2;
+}
+
+.order-form__email-icon {
+	position: absolute;
+	top: 43px;
+	right: 7px;
+	fill: #000000;
+	opacity: 0.2;
+}
+
 .order-form__wrapper-name-inner {
-	padding-top: 25px;
+	padding-top: 2px;
 }
 
 .order-form label {
@@ -64,6 +81,10 @@
 	}
 }
 
+.order-form__wrapper input {
+	width: 100%;
+}
+
 .order-form__wrapper--type input[type="radio"] {
 	display: none;
 }
@@ -74,24 +95,29 @@
 	cursor: pointer;
 	margin-top: 20px;
 }
-.order-form__wrapper input, .order-form__wrapper textarea{
-	&:hover{
-	border-color:#63d1bb;
-	}
-	&:active{
-	border-color:#63d1bb;
 
+.order-form__wrapper input,
+.order-form__wrapper textarea {
+	&:hover {
+		border-color: #63d1bb;
+	}
+	&:active {
+		border-color: #63d1bb;
 	}
 }
+
 .order-form__wrapper--type input[type="radio"]+label:hover::before {
 	border-color: #63d1bb;
 }
+
 .order-form__wrapper--type input[type="radio"]+label:active::before {
 	border-color: #c7c7c7;
 }
+
 .order-form__wrapper input[type="checkbox"]+label:hover::before {
 	border-color: #63d1bb;
 }
+
 .order-form__wrapper input[type="checkbox"]+label:active::before {
 	border-color: #c7c7c7;
 }
@@ -138,6 +164,10 @@
 		right: 31px;
 		background-color: #63d1bb;
 	}
+}
+
+.order-form__wrapper--contacts input {
+	padding-right: 45px;
 }
 
 .order-form__wrapper--color .order-form__title {
@@ -226,7 +256,7 @@
 	width: 100%;
 	border: 2px solid $color-main;
 	padding: 15px;
-	margin-top: 32px;
+	margin-top: 26px;
 	min-height: 142px;
 }
 
@@ -259,8 +289,8 @@
 		display: block;
 		position: absolute;
 		top: -10px;
-		left: -15px;
-		width: 50px;
+		left: -14px;
+		width: 55px;
 		height: 50px;
 		border: 2px solid black;
 		opacity: 0.7;
@@ -269,7 +299,8 @@
 	.order-form__wrapper--color input[type="checkbox"]:checked+label::before {
 		background-image: url("../img/icon-tick.svg");
 		background-repeat: no-repeat;
-		background-position: 5px 10px;
+		background-position: 10px 10px;
+		background-size: 36px;
 		opacity: 0.7;
 	}
 	.order-form {
@@ -307,8 +338,11 @@
 	}
 	.order-form__wrapper--type h2 {
 		position: absolute;
-		left: 50px;
-		top: 57px;
+		left: -180px;
+		top: 28px;
+		&::before {
+			display: none;
+		}
 	}
 	.order-form__wrapper--color {
 		position: relative;
@@ -320,11 +354,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+		&::before {
+			display: none;
+		}
 	}
 	.order-form__wrapper--color h2 {
 		position: absolute;
-		left: 49px;
-		top: 70px;
+		left: 52px;
+		top: 54px;
 	}
 	.order-form__wrapper--color label {
 		padding-bottom: 2px;
@@ -461,5 +498,17 @@
 	.order-form__wrapper--textarea textarea {
 		margin-left: 71px;
 		margin-right: 177px;
+	}
+	.order-form__tel-icon {
+		top: 29px;
+		right: 188px;
+	}
+	.order-form__email-icon {
+		top: 27px;
+		right: 183px;
+	}
+	input[type="email"]{
+
+		margin-left: 67px;
 	}
 }
