@@ -266,4 +266,48 @@
 			</div>
 		</div>
 	</footer>
+	<form class="modal container" action="https://echo.htmlacademy.ru" method="post">
+	<div class="modal__wrapper">
+		<b class="modal__title">
+				Добавить в корзину
+			</b>
+		<span class="modal__descr">
+				Выберите размер
+			</span>
+			<div class="modal__item-wrapper">
+		<input class="modal__item" type="radio" id="s" name="toggle-size" checked>
+		<label class="modal__size btn btn--size" for="s">S</label>
+		<input class="modal__item" type="radio" id="m" name="toggle-size">
+		<label class="modal__size btn btn--size" for="m">M</label>
+		<input class="modal__item" type="radio" id="l" name="toggle-size">
+		<label class="modal__size btn btn--size" for="l">L</label>
+		</div>
+
+		<button type="submit" class="modal__btn btn">Добавить</button>
+		</div>
+	</form>
+	<script>
+		var mapOpen = document.querySelector(".catalog-item__buy");
+
+  var mapPopup = document.querySelector(".modal");
+  var mapClose = mapPopup.querySelector(".write-us-popup__close");
+
+     mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-open");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-open");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-open")) {
+            mapPopup.classList.remove("modal-open");
+          }
+        }
+      });
+	</script>
 </body>

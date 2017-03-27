@@ -13,7 +13,31 @@
 		background-color: $color-second;
 		color: $color-third;
 	}
-	&:active{
+	&:active {
 		color: $color-third-opacity;
+	}
+}
+
+.btn--size {
+	font-size: 17px;
+	line-height: 16px;
+	width: 82px;
+	color: #444444;
+	border-color: #ececec;
+	text-align: center;
+	&:hover {
+		color: #444444;
+		background-color: #ffffff;
+		border-color: #c7c7c7;
+	}
+	&:active {
+		color: #444444;
+		border-color: #62d1ba;
+	}
+}
+
+@media #{$tablet-widths} {
+	.btn--size {
+		width: 112px;
 	}
 }

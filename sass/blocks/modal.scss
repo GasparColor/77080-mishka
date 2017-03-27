@@ -1,7 +1,22 @@
 .modal {
-	width: 565px;
-	padding: 50px 100px;
-	border: 1px solid black;
+	@include container;
+	outline: 1px solid #ececec;
+	box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
+	padding-bottom: 45px;
+	position: fixed;
+	z-index: 100;
+	display: none;
+	top: 50vh;
+	left: 50%;
+	margin-top: -170px;
+	margin-left: -160px;
+	width: 320px;
+	padding-top: 35px;
+	padding-bottom: 47px;
+	background-color: #ffffff;
+}
+.modal-open{
+	display: block;
 }
 
 .modal b {
@@ -10,7 +25,7 @@
 	line-height: 30px;
 	color: $color-main;
 	text-transform: uppercase;
-	display: inline-block;
+	display: block;
 	text-align: center;
 }
 
@@ -18,13 +33,31 @@
 	font-size: 15px;
 	line-height: 30px;
 	color: $color-second;
+	display: block;
+	text-align: center;
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
+
+.modal__item-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .modal input[type="radio"] {
-	dissplay: none;
+	display: none;
 }
-.modal input[type="radio"]:checked ~ .modal label{
+
+.modal input[type="radio"]:checked~.modal label {
 	outline: 1px solid red;
 }
+
+.modal__item:checked+.modal__size {
+	color: #444444;
+	border-color: #62d1ba;
+}
+
 .modal label {
 	font-weight: 700;
 	font-size: 17px;
@@ -43,4 +76,31 @@
 	padding-bottom: 20px;
 	width: 100%;
 	display: block;
+	margin-top: 30px;
+}
+
+.modal__wrapper {
+	width: 260px;
+	margin: 0 auto;
+}
+
+@media #{$tablet-widths} {
+	.modal b {
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.modal__descr {
+		font-size: 17px;
+		line-height: 30px;
+	}
+	.modal__wrapper {
+		width: 354px;
+		margin: 0 auto;
+	}
+	.modal {
+		width: 568px;
+		padding: 50px 100px;
+		left: 50%;
+		margin-left: -284px;
+	}
 }
