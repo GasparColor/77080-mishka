@@ -10,6 +10,7 @@
 
 .reviews-item__btn {
 	display: inline-block;
+	vertical-align: bottom;
 	&--prev {
 		transform: scale(-1, 1);
 		margin-right: 59px;
@@ -36,6 +37,7 @@
 	padding-top: 10px;
 	padding-bottom: 5px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .reviews-item__user-profile {
@@ -53,7 +55,7 @@
 
 .reviews-item__arrows {
 	margin-top: 30px;
-	margin-bottom: 37px;
+	margin-bottom: 39px;
 	height: 50px;
 	border: 1px solid black;
 }
@@ -88,6 +90,7 @@
 	}
 	.reviews-item__btn {
 		display: inline-block;
+		vertical-align: bottom;
 		&--prev {
 			transform: scale(-1, 1);
 			margin-right: 15px;

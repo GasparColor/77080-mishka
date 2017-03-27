@@ -43,16 +43,19 @@
 	.footer__wrapper {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 13px;
+		padding-top: 9px;
+
 	}
 	.footer {
 		padding: 50px;
 	}
 	.footer__list {
-		border: none;
+		margin-left: 139px;
+		align-items: center;
 		display: flex;
 		padding-bottom: none;
-	/*	margin-left: 146px;*/
+		border: none;
+		/*	margin-left: 146px;*/
 	}
 }
 
