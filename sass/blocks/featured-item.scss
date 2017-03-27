@@ -64,11 +64,11 @@
 	.featured {
 		background-image: url("../img/bg-zigzag-fill.svg");
 		background-position: center top;
-		background-size: auto 24px;
+		background-size: auto 23px;
 		background-repeat: repeat-x;
 		position: relative;
 		z-index: 100;
-		margin-top: -15px;
+		margin-top: -9px;
 	}
 	.featured-item__wrapper {
 		@include clearfix;
@@ -103,6 +103,7 @@
 	.featured-item__title {
 		@include heading-h2-tablet;
 		margin-bottom: 10px;
+		margin-top: 24px;
 	}
 	.featured-item__title-descr {
 		justify-content: flex-end;
@@ -129,7 +130,7 @@
 		padding-top: 16px;
 	}
 	.featured-item {
-		padding-top: 79px;
+		padding-top: 86px;
 		padding-bottom: 73px;
 	}
 	.featured-item__text {

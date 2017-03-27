@@ -23,11 +23,20 @@
 	vertical-align: top;
 }
 
+.footer__item-icon {
+	fill: #231F20;
+	&:hover {
+		fill: #46c1ae;
+	}
+	&:active {
+		opacity: 0.3
+	}
+}
+
 .footer__item a {
 	text-decoration: none;
 	font-size: 0px;
 	margin-right: 40px;
-	;
 }
 
 @media #{$tablet-widths} {
@@ -43,7 +52,7 @@
 		border: none;
 		display: flex;
 		padding-bottom: none;
-		margin-left: 146px;
+	/*	margin-left: 146px;*/
 	}
 }
 

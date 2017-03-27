@@ -15,14 +15,7 @@
 	}
 }
 
-.video__item-wrapper:hover .video__item-icon {
-	transform: scale(1.2);
-}
 
-.video-item-wrapper:active .video__item-icon {
-	transform: scale(0.8);
-	opacity: 0.3;
-}
 
 .video__item-icon {
 	position: absolute;
@@ -30,6 +23,14 @@
 	margin-top: -113px;
 	margin-left: -51px;
 	transition: transform 0.2s, opacity 0.3s;
+}
+.video__item-wrapper:hover .video__item-icon {
+	transform: scale(1.2);
+}
+
+.video__item-wrapper:active .video__item-icon {
+	transform: scale(0.8);
+	opacity: 0.3;
 }
 
 .video__title {

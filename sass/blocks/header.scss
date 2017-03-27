@@ -3,7 +3,7 @@
 	line-height: 30px;
 	text-align: center;
 	color: $color-main;
-	background-color: #f1f1f1;
+	background-color: #f9f9f9;
 	padding-top: 75px;
 	padding-bottom: 75px;
 	&--catalog {
@@ -11,7 +11,6 @@
 		margin-top: 0px;
 		margin-bottom: 35px;
 	}
-
 	&--form {
 		padding-top: 70px;
 		margin-top: 0px;
@@ -28,6 +27,7 @@
 	line-height: 30px;
 	width: 250px;
 	margin: 0 auto;
+	margin-bottom: 124px;
 }
 
 .header__title--bg {
@@ -45,7 +45,7 @@
 	68,
 	0.19);
 	padding-top: 68px;
-	padding-bottom: 122px;
+	padding-bottom: 0;
 }
 
 @media #{$tablet-widths} {
@@ -66,6 +66,7 @@
 		line-height: 50px;
 		width: 500px;
 		padding-top: 87px;
+		margin-bottom: 368px;
 	}
 	.header__title--form {
 		font-size: 43px;
@@ -77,7 +78,7 @@
 	}
 	.header__title--bg {
 		padding-top: 64px;
-		height: 625px;
+		height: 739px;
 		width: 100%;
 		background-size: 1150px auto;
 		background-position: center -4px;
@@ -102,17 +103,17 @@
 	}
 	.header__title h1 {
 		@include heading-h1-desktop;
-		margin-bottom: 90px;
+		margin-bottom: 357px;
 		width: 700px;
 	}
-	.header__title--catalog{
+	.header__title--catalog {
 		@include heading-h1-desktop;
 		background-position: 31px 237px;
 		padding-bottom: 109px;
 		background-image: url("../img/bg-zigzag-fill.svg");
 		margin-bottom: 0;
 	}
-	.header__title--form{
+	.header__title--form {
 		@include heading-h1-desktop;
 		background-position: 31px 237px;
 		padding-bottom: 109px;
