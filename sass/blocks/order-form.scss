@@ -1,7 +1,8 @@
 .order-form input:focus {
 	outline: none;
 	border-bottom: 2px solid #62d1ba;
-	}
+}
+
 .order-form textarea:focus {
 	outline: 1px solid #62d1ba;
 }
@@ -334,7 +335,6 @@
 		font-size: 17px;
 		line-height: 30px;
 	}
-
 	.order-form label {
 		font-size: 19px;
 		line-height: 19px;
@@ -385,7 +385,7 @@
 	.order-form__wrapper--name {
 		display: flex;
 		position: relative;
-		padding-top: 42px;
+		padding-top: 38px;
 		padding-left: 215px;
 		padding-bottom: 38px;
 	}
@@ -406,8 +406,8 @@
 		top: 64px;
 	}
 	.order-form__wrapper--contacts {
-		padding-left: 44px;
-		padding-top: 8px;
+		padding-left: 54px;
+		padding-top: 33px;
 		padding-bottom: 41px;
 	}
 	.order-form__wrapper-name-inner {
@@ -419,7 +419,7 @@
 	}
 	.order-form__wrapper-name-inner input {
 		background-color: inherit;
-		margin-left: 104px;
+		margin-left: 119px;
 		margin-top: 0;
 	}
 	.order-form__wrapper--textarea {
@@ -431,8 +431,16 @@
 		color: #63d1bb;
 	}
 	.order-form__wrapper--textarea textarea {
-		margin-left: 125px;
+		margin-left: 128px;
 		margin-top: 0;
+	}
+	.order-form__tel-icon {
+		top: 29px;
+		right: 24px;
+	}
+	.order-form__email-icon {
+		top: 28px;
+		right: 22px;
 	}
 }
 
@@ -466,12 +474,15 @@
 		top: 59px;
 	}
 	.order-form__wrapper--color {
-		padding-top: 60px;
+		padding-top: 65px;
 		padding-right: 120px;
-		padding-bottom: 20px;
+		padding-bottom: 17px;
 		&::before {
 			display: none;
 		}
+	}
+	.order-form__wrapper--color label {
+		width: 221px;
 	}
 	.order-form__wrapper--color h2 {
 		left: 59px;
@@ -492,7 +503,7 @@
 	}
 	.order-form__wrapper--contacts {
 		padding-left: 56px;
-		padding-top: 36px;
+		padding-top: 34px;
 	}
 	.order-form__wrapper--contacts input {
 		margin-left: 81px;
@@ -504,8 +515,8 @@
 		margin-top: 0px;
 	}
 	.order-form__wrapper--textarea textarea {
-		margin-left: 71px;
-		margin-right: 177px;
+		margin-left: 72px;
+		margin-right: 174px;
 	}
 	.order-form__tel-icon {
 		top: 29px;
@@ -515,8 +526,7 @@
 		top: 27px;
 		right: 183px;
 	}
-	input[type="email"]{
-
+	input[type="email"] {
 		margin-left: 67px;
 	}
 }
