@@ -15,8 +15,6 @@
 	}
 }
 
-
-
 .video__item-icon {
 	position: absolute;
 	left: 50%;
@@ -24,6 +22,7 @@
 	margin-left: -51px;
 	transition: transform 0.2s, opacity 0.3s;
 }
+
 .video__item-wrapper:hover .video__item-icon {
 	transform: scale(1.2);
 }
@@ -57,27 +56,28 @@
 	line-height: 24px;
 	color: $color-second;
 	padding-left: 30px;
-	padding-right: 30px;
+	padding-right: 42px;
 	margin-top: 23px;
 }
 
 .video__btn {
 	display: flex;
 	justify-content: center;
-	margin-top: 49px;
+	margin-top: 26px;
 	margin-left: 33px;
 	margin-right: 33px;
 }
 
 @media #{$tablet-widths} {
-	.video {
-
-	}
+	.video {}
 	.video__text {
 		@include contacts-font;
 		margin-top: 10px;
 		margin-left: 11px;
 		order: 2;
+		width: 267px;
+		margin-right: 0;
+		padding-right: 0;
 	}
 	.video__btn {
 		margin-top: 20px;
@@ -125,6 +125,10 @@
 }
 
 @media #{$desktop-widths} {
+	.video {
+		margin-bottom: 0;
+		padding-bottom: 104px;
+	}
 	.video__wrapper {
 		position: relative;
 		width: 1050px;
@@ -141,20 +145,19 @@
 		top: 0;
 		left: 0;
 	}
-	.video__item-icon{
+	.video__item-icon {
 		margin: 0;
-    top: 41%;
-    left: 29%;
+		top: 41%;
+		left: 29%;
 	}
 	.video__title {
 		align-self: flex-end;
 		width: 326px;
 		padding-top: 23px;
-
 	}
-	.video__title-icon{
+	.video__title-icon {
 		top: -31px;
-    left: 92px;
+		left: 92px;
 	}
 	.video__btn {
 		width: 228px;
