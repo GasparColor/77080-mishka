@@ -197,7 +197,7 @@
 			<picture>
 				<source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
 				<source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-				<img class="video__item" src="img/video-mobile@1x.jpg" srcset="img/vide-mobile@2x 2x" width="260" height="150" alt="video">
+				<img class="video__item" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="video">
 			</picture>
 
 			<svg class="video__item-icon" width="102" height="78" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891">
@@ -266,6 +266,7 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-section">
 	<form class="modal container" action="https://echo.htmlacademy.ru" method="post">
 	<div class="modal__wrapper">
 		<b class="modal__title">
@@ -286,10 +287,11 @@
 		<button type="submit" class="modal__btn btn">Добавить</button>
 		</div>
 	</form>
+	</div>
 	<script>
 		var modalOpen = document.querySelector(".catalog-item__buy");
 
-  var modalPopup = document.querySelector(".modal");
+  var modalPopup = document.querySelector(".modal-section");
 
      modalOpen.addEventListener("click", function(event) {
         event.preventDefault();
