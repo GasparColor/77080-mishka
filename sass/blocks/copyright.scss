@@ -6,7 +6,7 @@
 }
 
 .copyright {
-	padding-top: 25px;
+	padding-top: 20px;
 	display: flex;
 	justify-content: flex-start;
 	padding-left: 39px;
@@ -16,9 +16,20 @@
 	margin-left: 25px;
 }
 
+.copyright__copyright-icon {
+	fill: #63d1bb;
+	&:hover {
+		fill: #46c1ae;
+	}
+	&:active {
+		opacity: 0.3;
+	}
+}
+
 @media #{$tablet-widths} {
 	.copyright {
 		padding-top: 0;
+		/*margin-left: 200px;*/
 	}
 	.copyright a {
 		margin-left: 25px;

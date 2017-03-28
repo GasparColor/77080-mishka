@@ -5,6 +5,20 @@
 }
 
 .container__no-padding {
-	width: 320px;
+	width: auto;
 	margin: 0 auto;
+}
+
+@media #{$tablet-widths} {
+	.container__no-padding {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media #{$desktop-widths} {
+	.container__no-padding {
+		width: 525px;
+		margin: 0 auto;
+	}
 }

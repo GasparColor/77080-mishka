@@ -1,7 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global/normalize.scss";
-
 @import "blocks/about-us.scss";
 @import "blocks/btn.scss";
 @import "blocks/catalog.scss";
@@ -21,16 +20,42 @@
 @import "blocks/reviews-item.scss";
 @import "blocks/video.scss";
 @import "blocks/visually-hidden.scss";
-
-body{
+body {
 	font-family: OpenSans, Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
 
-*, *::before, *::after {
-box-sizing: inherit;
-}
-html {
- box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+
+/**{
+	outline: 1px solid red;
+}*/
+
+.zigzag {
+	background-image: url(../img/bg-zigzag-line.svg);
+	background-position: center;
+	background-repeat: repeat-x;
+	background-size: contain;
+	min-height: 7px;
+}
+
+@media #{$tablet-widths} {
+	.zigzag {
+		min-height: 17px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.zigzag {
+		min-height: 23px;
+	}
+}

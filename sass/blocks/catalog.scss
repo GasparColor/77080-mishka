@@ -6,13 +6,14 @@
 @media #{$tablet-widths} {
 	.catalog__wrapper {}
 	.catalog {
-		padding-top: 60px;
+		padding-top: 52px;
 	}
 }
 
 @media #{$desktop-widths} {
 	.catalog {
-		padding-top: 0;
+		padding-top: 123px;
+		;
 	}
 	.catalog__wrapper {
 		display: flex;
