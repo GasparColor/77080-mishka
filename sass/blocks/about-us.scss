@@ -2,17 +2,19 @@
 	padding: 0;
 	margin: 0;
 }
+
 .about-us {
 	position: relative;
-	    background-image: url(../img/bg-zigzag-line.svg);
-    background-repeat: repeat-x;
-    background-position: 16px 0px;
-
+	background-image: url(../img/bg-zigzag-line.svg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	background-size: contain;
 }
+
 .about-us__wrapper {
 	@include container;
 	padding: 0 30px;
-	padding-top: 21px;
+	padding-top: 37px;
 }
 
 .about-us__title {
@@ -101,7 +103,8 @@
 @media #{$tablet-widths} {
 	.about-us {
 		padding-bottom: 34px;
-		padding-top: 49px;
+		padding-top: 64px;
+
 	}
 	.about-us__title {
 		@include heading-h2-tablet;
@@ -129,16 +132,15 @@
 
 @media #{$desktop-widths} {
 	.about-us {
-		    padding-top: 84px;
-    background-image: url(../img/bg-zigzag-line.svg);
-    background-repeat: repeat-x;
-    background-position: 16px 0px;
-    padding-bottom: 39px;
+		padding-top: 84px;
+		background-image: url(../img/bg-zigzag-line.svg);
+		background-repeat: repeat-x;
+		background-position: 16px 0px;
+		padding-bottom: 39px;
 	}
 	.about-us__title {
 		@include heading-h1-desktop;
-		 padding-left: 171px;
-
+		padding-left: 171px;
 		padding-top: 0;
 		margin-bottom: 38px;
 	}

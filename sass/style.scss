@@ -43,7 +43,14 @@ iframe {
 /**{
 	outline: 1px solid red;
 }*/
-
+@media #{$mobile-widths}{
+	iframe {
+		width: 320px;
+    min-height: 459px;
+    margin: 0 auto;
+    padding: 0;
+	}
+}
 .zigzag {
 	background-image: url(../img/bg-zigzag-line.svg);
 	background-position: center;
@@ -57,8 +64,9 @@ iframe {
 		min-height: 17px;
 	}
 	iframe {
-
+		width: 100%;
 	padding: 0;
+	min-height: 457px;
 }
 }
 
