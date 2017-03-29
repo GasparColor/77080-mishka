@@ -63,6 +63,9 @@
 	}
 	.reviews {
 		width: 1050px;
-		padding: 77px 0px 120px 179px;
+		padding: 77px 0px 123px 171px;
+	}
+	.reviews::before {
+		    margin-top: 448px;
 	}
 }

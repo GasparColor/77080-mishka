@@ -104,7 +104,6 @@
 	.about-us {
 		padding-bottom: 34px;
 		padding-top: 64px;
-
 	}
 	.about-us__title {
 		@include heading-h2-tablet;
@@ -132,11 +131,12 @@
 
 @media #{$desktop-widths} {
 	.about-us {
-		padding-top: 84px;
+		padding-top: 80px;
 		background-image: url(../img/bg-zigzag-line.svg);
 		background-repeat: repeat-x;
-		background-position: 16px 0px;
+		background-position: 0px 0px;
 		padding-bottom: 39px;
+		background-size: 1250px auto;
 	}
 	.about-us__title {
 		@include heading-h1-desktop;
