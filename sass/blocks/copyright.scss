@@ -1,19 +1,10 @@
-/*.copyright__descr {
-	font-weight: 700;
-	font-size: 19px;
-	line-height: 19px;
-	color: $color-main;
-}
-
 .copyright {
-	padding-top: 20px;
 	display: flex;
-	justify-content: flex-start;
-	padding-left: 39px;
-}
-
-.copyright a {
-	margin-left: 25px;
+	flex-flow: row nowrap;
+	justify-content: center;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 28px;
+	padding-bottom: 30px;
 }
 
 .copyright__copyright-icon {
@@ -26,13 +17,17 @@
 	}
 }
 
+.copyright__descr {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 19px;
+	color: $color-main;
+	padding-right: 35px;
+}
+
 @media #{$tablet-widths} {
 	.copyright {
-		padding-top: 0;
-
-	}
-	.copyright a {
-		margin-left: 25px;
+		border: none;
+		margin-top: 13px;
 	}
 }
-*/

@@ -223,20 +223,6 @@
 	margin-top: 0;
 }
 
-
-/*.order-form__wrapper--name .order-form__title:nth-child(1) {
-	position: relative;
-	&::before {
-		position: absolute;
-		content: "";
-		width: 197px;
-		height: 1px;
-		top: 7px;
-		right: 0px;
-		background-color: #63d1bb;
-	}
-}*/
-
 .order-form__wrapper--name input {
 	display: flex;
 	border: none;
@@ -378,9 +364,6 @@
 		width: 219px;
 		margin-right: -5px;
 		margin-left: 46px;
-	}
-	.order-form__foorer-bg {
-		outline: 10px solid red;
 	}
 	.order-form__wrapper--name {
 		display: flex;
