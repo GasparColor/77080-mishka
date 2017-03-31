@@ -47,18 +47,20 @@
 @media #{$tablet-widths} {
 	.footer__container {
 		padding-top: 20px;
+		width: 768px;
 		padding-bottom: 51px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-left: 96px;
-		padding-right: 104px;
+		 padding-left: 49px;
+    padding-right: 49px;
+
 	}
 }
 
 @media #{$desktop-widths} {
 	.footer__container {
-		max-width: 1050px;
+		width: 1050px;
 		padding-right: 0;
 		padding-left: 0;
 	}
