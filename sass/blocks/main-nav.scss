@@ -51,11 +51,6 @@
 	background-color: #6a4d38;
 }
 
-.main-nav--nojs .main-nav__item--active a {
-	padding-right: 21px;
-	padding-left: 21px;
-	text-align: left;
-}
 
 .main-nav--nojs .main-nav__wrapper {
 	position: static;
@@ -139,9 +134,19 @@
 	.main-nav--closed .main-nav__item {
 		display: none;
 	}
+	.main-nav--nojs {
+		position: relative;
+	}
+	.main-nav--nojs .main-nav__item {
+		display: block;
+	}
+	.main-nav--nojs .main-nav__item--desktop {
+		display: none;
+	}
 }
 
 .main-nav {
+
 	display: flex;
 	font-weight: 700;
 	font-size: 17px;
