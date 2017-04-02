@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global/normalize.scss";
+@import "global/global.scss";
 @import "blocks/about-us.scss";
 @import "blocks/btn.scss";
 @import "blocks/catalog.scss";
@@ -9,6 +10,7 @@
 @import "blocks/container.scss";
 @import "blocks/copyright.scss";
 @import "blocks/featured-item.scss";
+@import "global/fonts.scss";
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
 @import "blocks/index-catalog.scss";
@@ -20,42 +22,7 @@
 @import "blocks/reviews-item.scss";
 @import "blocks/video.scss";
 @import "blocks/visually-hidden.scss";
-body {
-	font-family: OpenSans, Arial, Helvetica, sans-serif;
-	font-weight: 400;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
 
 
-/**{
-	outline: 1px solid red;
-}*/
 
-.zigzag {
-	background-image: url(../img/bg-zigzag-line.svg);
-	background-position: center;
-	background-repeat: repeat-x;
-	background-size: contain;
-	min-height: 7px;
-}
 
-@media #{$tablet-widths} {
-	.zigzag {
-		min-height: 17px;
-	}
-}
-
-@media #{$desktop-widths} {
-	.zigzag {
-		min-height: 23px;
-	}
-}

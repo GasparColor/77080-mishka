@@ -1,5 +1,5 @@
 .featured-item {
-	padding-bottom: 40px
+	padding-bottom: 31px;
 }
 
 .featured-item__title {
@@ -21,7 +21,7 @@
 	line-height: 24px;
 	color: $color-second;
 	padding-top: 8px;
-	padding-bottom: 2px;
+	padding-bottom: 0px;
 }
 
 .featured__wrapper {
@@ -51,7 +51,7 @@
 	color: $color-second;
 	display: flex;
 	justify-content: center;
-	padding-top: 17px;
+	padding-top: 20px;
 	padding-bottom: 26px;
 }
 
@@ -119,7 +119,7 @@
 		justify-content: flex-start;
 		padding-left: 80px;
 		margin-top: -123px;
-		margin-bottom: 7px;
+		margin-bottom: 5px;
 		font-size: 20px;
 		line-height: 24px;
 	}

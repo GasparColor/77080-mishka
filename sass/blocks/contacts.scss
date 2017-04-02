@@ -1,5 +1,5 @@
 .contacts {
-	padding-top: 20px;
+	padding-top: 24px;
 }
 
 .contacts__wrapper {
@@ -82,7 +82,7 @@
 	}
 	.contacts {
 		position: relative;
-		padding-top: 64px;
+		padding-top: 83px;
 		padding-bottom: 18px;
 	}
 	.contacts__icon {
@@ -133,13 +133,13 @@
 	.contacts__map {
 		float: right;
 		position: absolute;
-		top: 66px;
+		top: 86px;
 		right: 0;
-		z-index: -9;
+		z-index: 100;
 	}
 	.contacts__icon {
-		left: 66px;
-		top: 65px;
+		left: 62px;
+		top: 66px;
 	}
 	.contacts {
 		background-image: none;

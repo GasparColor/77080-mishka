@@ -4,7 +4,6 @@
 }
 
 @media #{$tablet-widths} {
-	.catalog__wrapper {}
 	.catalog {
 		padding-top: 52px;
 	}
@@ -13,7 +12,6 @@
 @media #{$desktop-widths} {
 	.catalog {
 		padding-top: 123px;
-		;
 	}
 	.catalog__wrapper {
 		display: flex;
