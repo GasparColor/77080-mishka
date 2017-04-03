@@ -51,7 +51,6 @@
 	background-color: #6a4d38;
 }
 
-
 .main-nav--nojs .main-nav__wrapper {
 	position: static;
 	height: auto;
@@ -104,6 +103,10 @@
 	width: 320px;
 }
 
+.main-nav__item--shipping {
+	display: none;
+}
+
 .main-nav__icon {
 	position: absolute;
 	fill: #231F20;
@@ -146,7 +149,6 @@
 }
 
 .main-nav {
-
 	display: flex;
 	font-weight: 700;
 	font-size: 17px;
@@ -221,6 +223,16 @@
 		width: 100%;
 		list-style-type: none;
 		margin-right: 30px;
+	}
+	.main-nav__item--shipping {
+		display: flex;
+		white-space: nowrap;
+		outline: 1px solid red;
+		margin: 0;
+		padding: 0;
+		margin-top: 60px;
+		margin-left: -238px;
+		font-size: 13px;
 	}
 	.main-nav__item a {
 		text-decoration: none;
@@ -303,6 +315,14 @@
 		padding-bottom: 36px;
 		padding-left: 36px;
 		margin-right: 0;
+
+	}
+	.main-nav__item--shipping {
+		right: 0;
+		white-space: nowrap;
+		outline: 1px solid red;
+		position: absolute;
+
 	}
 	.main-nav__item:nth-child(1) {
 		margin-top: 0;

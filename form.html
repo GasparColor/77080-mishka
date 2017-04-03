@@ -127,17 +127,17 @@
 					<h2 class="order-form__title">
 						Цвет
 					</h2>
-					<input class="order-form__input-color" type="checkbox" id="white" checked>
+					<input class="order-form__input-color" type="checkbox" name="white" id="white" checked>
 					<label for="white">Белый</label>
-					<input class="order-form__input-color" type="checkbox" id="gray" checked>
+					<input class="order-form__input-color" type="checkbox" name="gray" id="gray" checked>
 					<label for="gray">Серый</label>
-					<input class="order-form__input-color" type="checkbox" id="tiffany">
+					<input class="order-form__input-color" type="checkbox" name="tiffany" id="tiffany">
 					<label for="tiffany">&#171;Тиффани&#187;</label>
-					<input class="order-form__input-color" type="checkbox" id="black">
+					<input class="order-form__input-color" type="checkbox" name="black" id="black">
 					<label for="black">Черный</label>
-					<input class="order-form__input-color" type="checkbox" id="pink">
+					<input class="order-form__input-color" type="checkbox" name="pink" id="pink">
 					<label for="pink">Розовый</label>
-					<input class="order-form__input-color" type="checkbox" id="orange">
+					<input class="order-form__input-color" type="checkbox" name="orange" id="orange">
 					<label for="orange">Оранжевый</label>
 				</div>
 			</div>
@@ -146,14 +146,14 @@
 				<h2 class="order-form__title">
 					ФИО
 				</h2>
-				<label>Имя<input class="order-form__input-name" type="text" placeholder="Введите ваше имя*"></label>
-				<label>Фамилия<input class="order-form__input-name" type="text" placeholder="Укажите фамилию*"></label>
-				<label>Отчество<input class="order-form__input-name" type="text" placeholder="Отчество, если желаете*"></label>
+				<label>Имя<input class="order-form__input-name" name="name" type="text" placeholder="Введите ваше имя*"></label>
+				<label>Фамилия<input class="order-form__input-name" name="surname" type="text" placeholder="Укажите фамилию*"></label>
+				<label>Отчество<input class="order-form__input-name" name="patronymic" type="text" placeholder="Отчество, если желаете*"></label>
 			</div>
 
 			<div class="order-form__wrapper-name-inner">
 				<div class="order-form__wrapper order-form__wrapper--name order-form__wrapper--contacts">
-					<label class="order-form__title">Тел<input type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+					<label class="order-form__title">Тел<input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
 					 <svg class="order-form__tel-icon" width="25" height="24" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333">
                 <g>
                   <g id="UrwUhy_2_">
@@ -166,7 +166,7 @@
                   <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
                 </g>
               </svg></label>
-					<label class="order-form__title">E-mail<input type="email" placeholder="Ваш Email*" required>
+					<label class="order-form__title">E-mail<input type="email" name="email" placeholder="Ваш Email*" required>
 					<svg class="order-form__email-icon" width="32" height="32" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
                 <path id="mail" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
               </svg></label>
@@ -174,7 +174,7 @@
 			</div>
 
 			<div class="order-form__wrapper order-form__wrapper--name order-form__wrapper--textarea">
-				<label class="order-form__title">Доп <textarea placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
+				<label class="order-form__title">Доп <textarea name="wishes" placeholder="Опишите все ваши пожелания к заказу" required></textarea></label>
 				<span class="order-form__descr"><sup>*</sup>Поля обязательны для заполнения</span>
 				<button class="order-form__btn btn" type="submit">Отправить заказ</button>
 			</div>
@@ -203,32 +203,32 @@
             </svg>
           </a>
 			</div>
-			<div class="footer__social">
-				<ul class="footer__list">
-					<li class="footer__item footer__item--inst">
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item social__item--inst">
 						<a href="#">
 							<svg class="footer__item-icon  footer__item-icon--in" width="22" height="21">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
 							</svg>instagram</a>
 					</li>
-					<li class="footer__item footer__item--fb">
+					<li class="social__item social__item--fb">
 						<a href="#">
-							<svg class="footer__item-icon  footer__item-icon--fb" width="15" height="28">
+							<svg class="social__item-icon  social__item-icon--fb" width="15" height="28">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
 							</svg>facebook</a>
 					</li>
-					<li class="footer__item footer__item--tw">
+					<li class="social__item social__item--tw">
 						<a href="#">
-							<svg class="footer__item-icon  footer__item-icon--tw" width="23" height="20">
+							<svg class="social__item-icon  social__item-icon--tw" width="23" height="20">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
 							</svg>twitter</a>
 					</li>
 				</ul>
 			</div>
-			<div class="copyright">
-				<span class="copyright__descr">Разработано</span>
+			<div class="footer__copyright">
+				<span class="footer__copyright-descr">Разработано</span>
 				<a href="htmlacademy.ru">
-					<svg class="copyright__copyright-icon" width="27" height="34">
+					<svg class="footer__copyright-icon" width="27" height="34">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-academy"></use>
 					</svg>
 				</a>
