@@ -15,6 +15,7 @@
 		box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 	}
 }
+
 .catalog-item a {
 	text-decoration: none;
 }
@@ -117,6 +118,7 @@
 		width: 316px;
 		text-align: left;
 		flex-direction: column;
+		margin-bottom: 62px;
 		&:hover {
 			box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
 		}
@@ -127,6 +129,9 @@
 	.catalog-item__image {
 		width: 316px;
 		height: 464px;
+	}
+	.catalog-item__price {
+		padding-left: 0px;
 	}
 	.catalog-item__descr {
 		margin: 0;

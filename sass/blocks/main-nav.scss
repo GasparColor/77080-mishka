@@ -220,20 +220,21 @@
 	.main-nav__item {
 		border-top: none;
 		padding: 0;
-		width: 100%;
+		width: auto;
 		list-style-type: none;
 		margin-right: 30px;
+
 	}
 	.main-nav__item--shipping {
 		display: flex;
 		white-space: nowrap;
-		outline: 1px solid red;
 		margin: 0;
 		padding: 0;
 		margin-top: 60px;
 		margin-left: -238px;
 		font-size: 13px;
 	}
+
 	.main-nav__item a {
 		text-decoration: none;
 		font-weight: 700;
@@ -287,6 +288,9 @@
 		white-space: nowrap;
 		letter-spacing: 1px;
 	}
+	.main-nav--opened .main-nav__wrapper {
+		background-color: inherit;
+	}
 }
 
 @media #{$desktop-widths} {
@@ -315,14 +319,16 @@
 		padding-bottom: 36px;
 		padding-left: 36px;
 		margin-right: 0;
-
+		white-space: nowrap;
 	}
 	.main-nav__item--shipping {
-		right: 0;
 		white-space: nowrap;
-		outline: 1px solid red;
+		width: 287px;
+		margin: 0;
+		top: 106px;
+		right: 0px;
+		padding: 0;
 		position: absolute;
-
 	}
 	.main-nav__item:nth-child(1) {
 		margin-top: 0;
@@ -338,8 +344,8 @@
 		margin-top: 0;
 		margin-bottom: 0;
 		padding: 0;
-		padding-top: 31px;
-		padding-left: 74px;
+		padding-top: 30px;
+		padding-left: 29px;
 	}
 	.main-nav__item a {
 		font-size: 17px;
