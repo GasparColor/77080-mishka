@@ -52,6 +52,10 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		padding-top: 10px;
+	}
+	.logo a {
+		z-index: 9999;
 	}
 	.logo img {
 		width: 147px;
@@ -59,7 +63,8 @@
 	}
 	.logo--footer {
 		position: static;
-		margin-top: -8px;
+		margin-top: -19px;
+		width: auto;
 	}
 	.logo--footer img {
 		width: 106px;
