@@ -5,10 +5,18 @@
 
 .about-us {
 	position: relative;
-	background-image: url(../img/bg-zigzag-line.svg);
-	background-repeat: repeat-x;
-	background-position: 0px 0px;
-	background-size: contain;
+	&::before {
+		position: absolute;
+		content: "";
+		display: block;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 7px;
+		background: transparent url(../img/bg-zigzag-line.svg) repeat-x;
+		background-size: contain;
+		transform: rotate(180deg);
+	}
 }
 
 .about-us__wrapper {
@@ -82,6 +90,9 @@
 	.about-us {
 		padding-bottom: 34px;
 		padding-top: 64px;
+		&:before {
+			height: 15px;
+		}
 	}
 	.about-us__title {
 		@include heading-h2-tablet;
@@ -107,11 +118,9 @@
 @media #{$desktop-widths} {
 	.about-us {
 		padding-top: 80px;
-		background-image: url(../img/bg-zigzag-line.svg);
-		background-repeat: repeat-x;
-		background-position: 0px 0px;
-		padding-bottom: 39px;
-		background-size: 1250px auto;
+		&::before {
+			height: 24px;
+		}
 	}
 	.about-us__title {
 		@include heading-h1-desktop;

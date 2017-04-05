@@ -1,4 +1,3 @@
-
 .logo {
 	text-align: center;
 	padding: 20px 0;
@@ -10,15 +9,17 @@
 		opacity: 0.2;
 	}
 }
+
 .footer__logo-link {
 	font-size: 0;
-		&:hover {
+	&:hover {
 		fill: #46c1ae;
 	}
 	&:active {
-opacity: 0.3;
+		opacity: 0.3;
+	}
 }
-}
+
 .logo--footer {
 	display: none;
 	margin-right: 77px;

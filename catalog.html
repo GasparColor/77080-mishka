@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>HTML Academy: Мишка</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -89,6 +93,7 @@
 						</li>
 						<li class="main-nav__item main-nav__item--desktop"><a href="#">Новые поступления</a></li>
 						<li class="main-nav__item main-nav__item--desktop"><a href="#">Распродажа</a></li>
+
 					</ul>
 				</div>
 			</nav>
@@ -106,17 +111,20 @@
 		<div class="catalog__wrapper">
 
 			<article class="catalog-item">
-				<picture>
-					<source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-					<img class="catalog-item__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195"
-					  alt="зайчик">
-				</picture>
-
+				<a href="catalog1.html">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+						<img class="catalog-item__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195"
+						  alt="зайчик">
+					</picture>
+				</a>
 				<div class="catalog-item__wrapper">
-					<h1 class="catalog-item__title">
-						Зайчик-попрыгайчик
-					</h1>
+					<a href="catalog1.html">
+						<h2 class="catalog-item__title">
+							Зайчик-попрыгайчик
+						</h2>
+					</a>
 					<span class="catalog-item__descr">
 					Рост 30 см, вес 200 г
 				</span>
@@ -134,16 +142,20 @@
 			</article>
 
 			<article class="catalog-item">
-				<picture>
-					<source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-					<img class="catalog-item__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195"
-					  alt="зайчик">
-				</picture>
+				<a href="catalog2.html">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+						<img class="catalog-item__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195"
+						  alt="зайчик">
+					</picture>
+				</a>
 				<div class="catalog-item__wrapper">
-					<h1 class="catalog-item__title">
-						Корзинка для белья
-					</h1>
+					<a href="catalog1.html">
+						<h2 class="catalog-item__title">
+							Корзинка для белья
+						</h2>
+					</a>
 					<span class="catalog-item__descr">
 					Диаметр 15 см, высота 10 см
 				</span>
@@ -161,16 +173,20 @@
 			</article>
 
 			<article class="catalog-item">
-				<picture>
-					<source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-					<img class="catalog-item__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195"
-					  alt="зайчик">
-				</picture>
+				<a href="catalog3.html">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+						<img class="catalog-item__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195"
+						  alt="зайчик">
+					</picture>
+				</a>
 				<div class="catalog-item__wrapper">
-					<h1 class="catalog-item__title">
-						Большая корзинка<br> для игрушек
-					</h1>
+					<a href="catalog3.html">
+						<h2 class="catalog-item__title">
+							Большая корзинка<br> для игрушек
+						</h2>
+					</a>
 					<span class="catalog-item__descr">
 					Диаметр 30 см, высота 30 см
 				</span>
@@ -186,6 +202,8 @@
 					</div>
 				</div>
 			</article>
+
+
 		</div>
 	</section>
 
@@ -193,7 +211,7 @@
 
 	<section class="video">
 		<div class="video__wrapper">
-			<h1 class="video__title">
+			<h2 class="video__title">
 				<svg class="video__title-icon" width="32" height="32" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
 					<g transform="translate(0 192)">
 						<path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"
@@ -201,7 +219,7 @@
 					</g>
 				</svg>
 				Процесс<br> производства
-			</h1>
+			</h2>
 			<div class="video__item-wrapper">
 				<picture>
 					<source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
@@ -253,32 +271,32 @@
             </svg>
           </a>
 			</div>
-			<div class="footer__social">
-				<ul class="footer__list">
-					<li class="footer__item footer__item--inst">
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item social__item--inst">
 						<a href="#">
 							<svg class="footer__item-icon  footer__item-icon--in" width="22" height="21">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
 							</svg>instagram</a>
 					</li>
-					<li class="footer__item footer__item--fb">
+					<li class="social__item social__item--fb">
 						<a href="#">
-							<svg class="footer__item-icon  footer__item-icon--fb" width="15" height="28">
+							<svg class="social__item-icon  social__item-icon--fb" width="15" height="28">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
 							</svg>facebook</a>
 					</li>
-					<li class="footer__item footer__item--tw">
+					<li class="social__item social__item--tw">
 						<a href="#">
-							<svg class="footer__item-icon  footer__item-icon--tw" width="23" height="20">
+							<svg class="social__item-icon  social__item-icon--tw" width="23" height="20">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
 							</svg>twitter</a>
 					</li>
 				</ul>
 			</div>
-			<div class="copyright">
-				<span class="copyright__descr">Разработано</span>
+			<div class="footer__copyright">
+				<span class="footer__copyright-descr">Разработано</span>
 				<a href="htmlacademy.ru">
-					<svg class="copyright__copyright-icon" width="27" height="34">
+					<svg class="footer__copyright-icon" width="27" height="34">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-academy"></use>
 					</svg>
 				</a>
@@ -295,11 +313,11 @@
 				Выберите размер
 			</span>
 				<div class="modal__item-wrapper">
-					<input class="modal__item" type="radio" id="s" name="toggle-size" checked>
+					<input class="modal__item" type="radio" value="s" id="s" name="toggle-size" checked>
 					<label class="modal__size btn btn--size" for="s">S</label>
-					<input class="modal__item" type="radio" id="m" name="toggle-size">
+					<input class="modal__item" type="radio" value="m" id="m" name="toggle-size">
 					<label class="modal__size btn btn--size" for="m">M</label>
-					<input class="modal__item" type="radio" id="l" name="toggle-size">
+					<input class="modal__item" type="radio" value="l" id="l" name="toggle-size">
 					<label class="modal__size btn btn--size" for="l">L</label>
 				</div>
 
@@ -307,5 +325,21 @@
 			</div>
 		</form>
 	</div>
-	<script src="js/main.js"></script>
+		<script src="js/main.js"></script>
+			<script src="_assets/jquery.js"></script>
+<script src="_assets/jquery.pixlayout.js"></script>
+<script>
+    if(true) {
+        $(function(){
+            $.pixlayout({
+                src: "_assets/index.jpg",
+                opacity: 0.4,
+                top: -2,
+                center: true,
+                clip: true,
+                show: true,
+            })
+        });
+    }
+</script>
 </body>

@@ -16,6 +16,10 @@
 	}
 }
 
+.catalog-item a {
+	text-decoration: none;
+}
+
 .catalog-item__title {
 	margin-top: 0;
 	font-weight: 700;
@@ -79,6 +83,7 @@
 	.catalog-item {
 		margin-bottom: 55px;
 		display: flex;
+		line-height: 0;
 	}
 	.catalog-item picture {
 		line-height: 0;
@@ -113,6 +118,7 @@
 		width: 316px;
 		text-align: left;
 		flex-direction: column;
+		margin-bottom: 62px;
 		&:hover {
 			box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
 		}
@@ -123,6 +129,9 @@
 	.catalog-item__image {
 		width: 316px;
 		height: 464px;
+	}
+	.catalog-item__price {
+		padding-left: 0px;
 	}
 	.catalog-item__descr {
 		margin: 0;

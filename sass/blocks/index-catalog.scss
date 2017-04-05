@@ -1,3 +1,6 @@
+.index-catalog {
+	justify-content: center;
+}
 .index-catalog__icon {
 	position: absolute;
 	fill: #149080;
@@ -14,6 +17,7 @@
 
 .index-catalog__item--interior {
 	background-color: #63d1bb;
+	padding-right: 159px;
 	&:hover {
 		background-color: #59d5bc;
 	}
@@ -21,6 +25,7 @@
 
 .index-catalog__item--toys {
 	background-color: #56c3b2;
+	padding-right: 176px;
 	&:hover {
 		background-color: #46c1ae;
 	}
@@ -38,7 +43,7 @@
 	text-decoration: none;
 	padding-top: 25px;
 	padding-bottom: 30px;
-	padding-right: 175px;
+	/*padding-right: 175px;*/
 	display: block;
 	text-align: center;
 }
