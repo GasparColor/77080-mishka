@@ -16,9 +16,11 @@
 }
 
 .video__item-icon {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	margin-top: -113px;
+	/* top: -17%; */
+	bottom: 57px;
+	margin-top: -104px;
 	margin-left: -51px;
 	transition: transform 0.2s, opacity 0.3s;
 }
@@ -69,7 +71,6 @@
 }
 
 @media #{$tablet-widths} {
-	.video {}
 	.video__text {
 		@include contacts-font;
 		margin-top: 10px;
@@ -120,6 +121,7 @@
 		height: 455px;
 	}
 	.video__item-icon {
+		bottom: 211px;
 		margin-top: -266px;
 	}
 }
@@ -149,6 +151,7 @@
 		margin: 0;
 		top: 41%;
 		left: 29%;
+		bottom: -153px;
 	}
 	.video__title {
 		align-self: flex-end;
