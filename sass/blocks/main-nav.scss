@@ -230,7 +230,7 @@
 		margin: 0;
 		padding: 0;
 		margin-top: 60px;
-		margin-left: -238px;
+		margin-left: -230px;
 		font-size: 13px;
 	}
 	.main-nav__item a {
@@ -289,6 +289,10 @@
 	.main-nav--opened .main-nav__wrapper {
 		background-color: inherit;
 	}
+	.main-nav__item:nth-child(5n) a {
+		font-weight: 400;
+		font-size: 15px;
+	}
 }
 
 @media #{$desktop-widths} {
@@ -321,7 +325,7 @@
 	}
 	.main-nav__item--shipping {
 		white-space: nowrap;
-		width: 287px;
+		width: 232px;
 		margin: 0;
 		top: 106px;
 		right: 0px;
