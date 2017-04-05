@@ -1,3 +1,12 @@
+@media #{$mobile-widths} {
+	.header__title--catalog {
+		min-width: 320px;
+	}
+	.header__title span{
+		white-space: nowrap;
+	}
+}
+
 .header__title {
 	font-size: 27px;
 	line-height: 30px;
@@ -53,14 +62,6 @@
 	.header__wrapper {
 		position: relative;
 		padding-top: 21px;
-		&::before {
-			position: absolute;
-			right: 50px;
-			top: 106px;
-			content: "Бесплатная доставка по России";
-			font-size: 15px;
-			line-height: 24px;
-		}
 	}
 	.header__title h1 {
 		font-size: 43px;
@@ -78,7 +79,7 @@
 		background-position: 11px 202px;
 	}
 	.header__title--bg {
-		padding-top: 64px;
+		padding-top: 66px;
 		height: 739px;
 		width: 100%;
 		background-size: 1150px auto;
@@ -104,7 +105,7 @@
 	}
 	.header__title h1 {
 		@include heading-h1-desktop;
-		margin-bottom: 357px;
+		margin-bottom: 354px;
 		width: 700px;
 	}
 	.header__title--catalog {

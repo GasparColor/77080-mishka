@@ -11,14 +11,16 @@
 .reviews-item__btn {
 	display: inline-block;
 	vertical-align: bottom;
+	border: 0;
+	background-color: #ffffff;
 	&--prev {
 		transform: scale(-1, 1);
 		margin-right: 59px;
 		margin-left: 37px;
-		padding-top: 9px;
+		margin-top: 9px;
 	}
 	&--next {
-		margin-left: 15px;
+		margin-left: 2px;
 	}
 	&:hover {
 		opacity: 0.6;
@@ -93,7 +95,7 @@
 		vertical-align: bottom;
 		&--prev {
 			transform: scale(-1, 1);
-			margin-right: 15px;
+			margin-right: 0px;
 		}
 		&--next {
 			margin-left: 15px;
