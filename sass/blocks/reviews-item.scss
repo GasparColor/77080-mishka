@@ -20,7 +20,7 @@
 		margin-top: 9px;
 	}
 	&--next {
-		margin-left: 15px;
+		margin-left: 2px;
 	}
 	&:hover {
 		opacity: 0.6;
@@ -95,7 +95,7 @@
 		vertical-align: bottom;
 		&--prev {
 			transform: scale(-1, 1);
-			margin-right: 15px;
+			margin-right: 0px;
 		}
 		&--next {
 			margin-left: 15px;

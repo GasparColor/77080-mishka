@@ -57,9 +57,9 @@
 	font-size: 13px;
 	line-height: 24px;
 	color: $color-second;
-	padding-left: 30px;
+	padding-left: 35px;
 	padding-right: 42px;
-	margin-top: 28px;
+	margin-top: 7px;
 }
 
 .video__btn {
@@ -103,9 +103,9 @@
 		position: relative;
 		order: 2;
 		font-size: 20px;
-		padding-top: 23px;
+		padding-top: 22px;
 		line-height: 24px;
-		margin-top: 9px;
+		margin-top: -9px;
 		margin-left: 19px;
 	}
 	.video__title-icon {
@@ -134,7 +134,8 @@
 	.video__wrapper {
 		position: relative;
 		width: 1050px;
-		padding-top: 65px;
+		padding-top: 0px;
+		margin-top: 0px;
 		padding-right: 50px;
 		padding-bottom: 59px;
 	}
@@ -150,17 +151,17 @@
 	.video__item-icon {
 		margin: 0;
 		top: 41%;
-		left: 29%;
-		bottom: -153px;
+		left: 30%;
+		bottom: -189px;
 	}
 	.video__title {
 		align-self: flex-end;
 		width: 326px;
-		padding-top: 23px;
+		padding-top: 22px;
 	}
 	.video__title-icon {
-		top: -31px;
-		left: 92px;
+		top: -32px;
+		left: 86px;
 	}
 	.video__btn {
 		width: 228px;

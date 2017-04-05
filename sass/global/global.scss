@@ -20,6 +20,8 @@ iframe {
 
 input,
 textarea {
+	color: $color-main;
+	font-family: OpenSans, Arial, Helvetica, sans-serif;
 	font-size: 17px;
 	line-height: 17px;
 }
