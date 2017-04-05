@@ -47,13 +47,11 @@
 
 @media #{$desktop-widths} {
 	.logo {
-		width: 147px;
-		left: 43%;
-		top: 10px;
+		margin: 0;
 		padding: 0;
-		margin-bottom: 0;
-		line-height: 0;
-		position: absolute;
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 	.logo img {
 		width: 147px;
