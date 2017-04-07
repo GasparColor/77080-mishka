@@ -2,9 +2,13 @@
 	.header__title--catalog {
 		min-width: 320px;
 	}
-	.header__title span{
+	.header__title span {
 		white-space: nowrap;
 	}
+}
+
+.header__title--form {
+	min-width: 320px;
 }
 
 .header__title {
