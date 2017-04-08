@@ -19,9 +19,8 @@
 	background: inherit;
 	border: none;
 	position: absolute;
-	left: 50%;
-	/* top: -17%; */
-	bottom: 36px;
+	left: 48%;
+	bottom: 31px;
 	margin-top: 0;
 	margin-left: -51px;
 	transition: transform 0.2s, opacity 0.3s;
@@ -73,7 +72,7 @@
 .video__btn {
 	display: flex;
 	justify-content: center;
-	margin-top: 26px;
+	margin-top: 22px;
 	margin-left: 33px;
 	margin-right: 33px;
 }
@@ -82,9 +81,9 @@
 	.video__text {
 		@include contacts-font;
 		margin-top: 10px;
-		margin-left: 11px;
+		margin-left: 6px;
 		order: 2;
-		width: 611px;
+		width: 616px;
 		margin-right: 0;
 		padding-right: 0;
 	}
@@ -179,9 +178,11 @@
 		margin-top: 29px;
 	}
 	.video__text {
+		margin-top: 8px;
 		padding-top: 2px;
+		padding-left: 46px;
 		width: 283px;
-		margin-right: -14px;
+		margin-right: 0;
 		align-self: flex-end;
 	}
 	.video__item-wrapper {
@@ -189,5 +190,6 @@
 	}
 	.video__item-btn {
 		margin-left: -224px;
+		left: 49%;
 	}
 }

@@ -42,7 +42,7 @@ for (var i = 0; i < product_buy.length; i++) {
  var navMain = document.querySelector(".main-nav");
     var navToggle = document.querySelector(".main-nav__toggle");
 
-    navMain.classList.remove("main-nav--nojs");
+    navMain.classList.remove("main-nav--no-js");
 
     navToggle.addEventListener('click', function() {
       if (navMain.classList.contains("main-nav--closed")) {

@@ -97,6 +97,7 @@
 	.about-us__title {
 		@include heading-h2-tablet;
 		padding-left: 0;
+		margin-bottom: 39px;
 	}
 	.about-us__list {
 		display: flex;
