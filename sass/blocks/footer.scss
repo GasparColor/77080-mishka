@@ -38,7 +38,7 @@
 	font-size: 19px;
 	line-height: 19px;
 	color: $color-main;
-	padding-right: 35px;
+	padding-right: 30px;
 }
 
 @media #{$tablet-widths} {
@@ -55,6 +55,9 @@
 	.footer__copyright {
 		border: none;
 		margin-top: 13px;
+	}
+	.footer__copyright-descr {
+		padding-right: 29px;
 	}
 }
 

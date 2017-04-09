@@ -29,19 +29,27 @@
 	padding: 0 30px;
 }
 
-.featured-item__table {
+.featured-item__list {
+	margin-top: 20px;
+	margin-bottom: 30px;
 	font-size: 15px;
 	line-height: 20px;
 	color: $color-second;
-	padding-bottom: 25px;
-	& td {
-		font-size: 15px;
-		line-height: 20px;
-		padding: 9px 0;
-		padding-right: 25px;
-		border-bottom: 1px solid #ececec;
-		border-collapse: collapse;
-	}
+}
+
+.featured-item__list-wrapper {
+	display: flex;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #ececec;
+}
+
+.featured-item__type {
+	width: 80px;
+}
+
+.featured-item__value {
+	margin-left: 18px;
 }
 
 .featured-item__price {
@@ -63,12 +71,12 @@
 @media #{$tablet-widths} {
 	.featured {
 		background-image: url("../img/bg-zigzag-fill.svg");
-		background-position: center top;
+		background-position: 12px top;
 		background-size: auto 23px;
 		background-repeat: repeat-x;
 		position: relative;
 		z-index: 100;
-		margin-top: -9px;
+		margin-top: -11px;
 	}
 	.featured-item__wrapper {
 		@include clearfix;
@@ -82,22 +90,13 @@
 	.featurted-item__img {
 		top: 154px;
 	}
-	.featured-item__table td {
-		padding-right: 25px;
-	}
-	.featured-item__table {
-		border-collapse: collapse
-	}
-	& td {
-		border-bottom: 1px solid #ececec;
-		border-collapse: collapse;
-	}
 	.featured-item__text {
 		font-size: 17px;
 		line-height: 30px;
 		width: 290px;
 		padding-top: 0;
-		padding-bottom: 20px;
+		padding-bottom: 0px;
+		margin-bottom: 37px;
 		margin-top: 0;
 	}
 	.featured-item__title {
@@ -119,13 +118,14 @@
 		width: 293px;
 	}
 	.featured-item__price {
-		justify-content: flex-start;
 		padding-left: 80px;
-		margin-top: -133px;
+		margin-top: -135px;
 		margin-bottom: 7px;
+		display: block;
 		font-size: 20px;
 		line-height: 24px;
 		padding-top: 30px;
+		width: 291px;
 	}
 }
 
@@ -138,7 +138,8 @@
 		padding-bottom: 73px;
 	}
 	.featured-item__text {
-		padding-bottom: 34px;
+		padding-bottom: 0;
+		margin-bottom: 51px;
 	}
 	.featured-item__title {
 		@include heading-h1-desktop;
@@ -152,15 +153,17 @@
 		margin-left: 176px;
 	}
 	.featured-item__price {
-		padding-left: 24%;
+		padding-left: 23%;
 		margin-top: 339px;
+		display: flex;
+		width: 415px;
 	}
 	.featured-item__btn {
 		margin-left: 176px;
 	}
 	.featured-item__img {
 		position: absolute;
-		top: 89px;
+		top: 85px;
 		margin-left: 13px;
 		z-index: -1;
 	}

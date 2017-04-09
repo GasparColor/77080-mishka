@@ -18,6 +18,14 @@ iframe {
 	padding: 0 30px;
 }
 
+.main input::placeholder,
+.main textarea::placeholder {
+	color: $color-second;
+	opacity: 0.3;
+	font-family: OpenSans, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
 input,
 textarea {
 	color: $color-main;
